@@ -1,1 +1,92 @@
+name: Update text files
 
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-sub:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update BLACK and WHITE files
+        env:
+          BLACK_1: "https://example.com/black1.txt"
+          BLACK_2: "https://example.com/black2.txt"
+          WHITE_1: "https://example.com/white1.txt"
+          WHITE_2: "https://example.com/white2.txt"
+
+        run: |
+          set -e
+
+          echo "Downloading BLACK sources..."
+
+          curl -L --fail --silent --show-error \
+            "$BLACK_1" > black1.txt
+
+          curl -L --fail --silent --show-error \
+            "$BLACK_2" > black2.txt
+
+
+          echo "Building sub-black.txt..."
+
+          {
+            cat black1.txt
+            echo
+            cat black2.txt
+          } > sub-black.txt
+
+
+          echo "Downloading WHITE-LIST sources..."
+
+          curl -L --fail --silent --show-error \
+            "$WHITE_1" > white1.txt
+
+          curl -L --fail --silent --show-error \
+            "$WHITE_2" > white2.txt
+
+
+          echo "Building sub-white.txt..."
+
+          {
+            cat white1.txt
+            echo
+            cat white2.txt
+          } > sub-white.txt
+
+
+          echo "BLACK:"
+          wc -l sub-black.txt
+
+          echo "WHITE-LIST:"
+          wc -l sub-white.txt
+
+
+      - name: Commit updated files
+        run: |
+
+          git config user.name \
+            "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add sub-black.txt sub-white.txt
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit \
+            -m "Automatic text sources update"
+
+          git push

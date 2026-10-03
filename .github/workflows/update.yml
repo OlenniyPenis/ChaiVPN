@@ -32,6 +32,7 @@ jobs:
           import json
           import hashlib
           import os
+          import re
           import urllib.request
           from datetime import datetime, timezone
 
@@ -49,7 +50,9 @@ jobs:
           }
 
 
-          # Загружаем предыдущий status.json
+          # Загружаем предыдущий status.json,
+          # чтобы сохранять старые данные при необходимости.
+
           try:
 
               with open(
@@ -65,7 +68,7 @@ jobs:
               old_status = {}
 
 
-          def old_source(group, name):
+          def get_old_source(group, name):
 
               return (
                   old_status
@@ -82,17 +85,10 @@ jobs:
                   "%Y-%m-%dT%H:%M:%SZ"
               )
 
-              previous = old_source(
+
+              old = get_old_source(
                   group,
                   name
-              )
-
-              previous_sha = previous.get(
-                  "sha256"
-              )
-
-              previous_updated = previous.get(
-                  "updated"
               )
 
 
@@ -138,42 +134,55 @@ jobs:
                   ).hexdigest()
 
 
-                  # Первый запуск
-                  if not previous_sha:
+                  # ==========================================
+                  # ИЩЕМ # updated: ...
+                  # ==========================================
 
-                      source_updated = checked
+                  source_updated = "—"
 
-                      print(
-                          "First check -> updated = checked"
+                  for line in text.splitlines():
+
+                      match = re.search(
+                          r"^\s*#\s*updated:\s*(.+?)\s*$",
+                          line,
+                          re.IGNORECASE
+                      )
+
+                      if match:
+
+                          source_updated = (
+                              match.group(1).strip()
+                          )
+
+                          break
+
+
+                  # Если источник не содержит # updated,
+                  # сохраняем старое значение.
+
+                  if source_updated == "—":
+
+                      source_updated = old.get(
+                          "updated",
+                          "—"
                       )
 
 
-                  # Файл изменился
-                  elif sha256 != previous_sha:
+                  print(
+                      f"{group}/{name}: "
+                      f"{len(lines)} lines"
+                  )
 
-                      source_updated = checked
-
-                      print(
-                          "Content changed -> updated = checked"
-                      )
-
-
-                  # Файл НЕ изменился
-                  else:
-
-                      source_updated = (
-                          previous_updated
-                          or checked
-                      )
-
-                      print(
-                          "No changes -> keeping old updated"
-                      )
+                  print(
+                      f"{group}/{name}: "
+                      f"updated = {source_updated}"
+                  )
 
 
                   return {
 
-                      "online": True,
+                      "online":
+                          True,
 
                       "configs":
                           len(lines),
@@ -192,9 +201,11 @@ jobs:
               except Exception as error:
 
                   print(
-                      f"ERROR: {error}"
+                      f"{group}/{name}: ERROR: {error}"
                   )
 
+
+                  # При ошибке НЕ стираем старую дату.
 
                   return {
 
@@ -202,22 +213,30 @@ jobs:
                           False,
 
                       "configs":
-                          previous.get(
+                          old.get(
                               "configs",
                               0
                           ),
 
                       "updated":
-                          previous_updated
-                          or "—",
+                          old.get(
+                              "updated",
+                              "—"
+                          ),
 
                       "checked":
                           checked,
 
                       "sha256":
-                          previous_sha
+                          old.get(
+                              "sha256"
+                          )
                   }
 
+
+          # ==========================================
+          # BLACK
+          # ==========================================
 
           black = {
 
@@ -237,6 +256,10 @@ jobs:
           }
 
 
+          # ==========================================
+          # WHITE-LIST
+          # ==========================================
+
           whitelist = {
 
               "source1":
@@ -254,6 +277,10 @@ jobs:
                   )
           }
 
+
+          # ==========================================
+          # ОБЩАЯ СТАТИСТИКА
+          # ==========================================
 
           all_sources = [
 
@@ -278,13 +305,18 @@ jobs:
           )
 
 
-          # Время запуска workflow
-          workflow_updated = datetime.now(
+          # Время проверки самого status.json
+
+          checked = datetime.now(
               timezone.utc
           ).strftime(
               "%Y-%m-%dT%H:%M:%SZ"
           )
 
+
+          # ==========================================
+          # STATUS.JSON
+          # ==========================================
 
           status = {
 
@@ -310,7 +342,7 @@ jobs:
                   whitelist,
 
               "updated":
-                  workflow_updated
+                  checked
           }
 
 

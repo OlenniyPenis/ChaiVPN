@@ -36,7 +36,6 @@ jobs:
           from datetime import datetime, timezone
 
 
-          # Получаем URL из переменных GitHub Actions
           SOURCES = {
               "black": {
                   "source1": os.environ["BLACK_1"],
@@ -50,7 +49,32 @@ jobs:
           }
 
 
-          def check_source(name, url):
+          # Загружаем предыдущий status.json
+          try:
+
+              with open(
+                  "status.json",
+                  "r",
+                  encoding="utf-8"
+              ) as file:
+
+                  old_status = json.load(file)
+
+          except Exception:
+
+              old_status = {}
+
+
+          def old_source(group, name):
+
+              return (
+                  old_status
+                  .get(group, {})
+                  .get(name, {})
+              )
+
+
+          def check_source(group, name, url):
 
               checked = datetime.now(
                   timezone.utc
@@ -58,16 +82,35 @@ jobs:
                   "%Y-%m-%dT%H:%M:%SZ"
               )
 
+              previous = old_source(
+                  group,
+                  name
+              )
+
+              previous_sha = previous.get(
+                  "sha256"
+              )
+
+              previous_updated = previous.get(
+                  "updated"
+              )
+
+
               try:
 
-                  print(f"Checking {name}: {url}")
+                  print(
+                      f"Checking {group}/{name}: {url}"
+                  )
+
 
                   request = urllib.request.Request(
                       url,
                       headers={
-                          "User-Agent": "GitHub-Actions"
+                          "User-Agent":
+                          "GitHub-Actions"
                       }
                   )
+
 
                   with urllib.request.urlopen(
                       request,
@@ -95,103 +138,161 @@ jobs:
                   ).hexdigest()
 
 
-                  print(
-                      f"{name}: OK, {len(lines)} lines"
-                  )
+                  # Первый запуск
+                  if not previous_sha:
+
+                      source_updated = checked
+
+                      print(
+                          "First check -> updated = checked"
+                      )
+
+
+                  # Файл изменился
+                  elif sha256 != previous_sha:
+
+                      source_updated = checked
+
+                      print(
+                          "Content changed -> updated = checked"
+                      )
+
+
+                  # Файл НЕ изменился
+                  else:
+
+                      source_updated = (
+                          previous_updated
+                          or checked
+                      )
+
+                      print(
+                          "No changes -> keeping old updated"
+                      )
 
 
                   return {
+
                       "online": True,
-                      "configs": len(lines),
-                      "updated": "—",
-                      "checked": checked,
-                      "sha256": sha256
+
+                      "configs":
+                          len(lines),
+
+                      "updated":
+                          source_updated,
+
+                      "checked":
+                          checked,
+
+                      "sha256":
+                          sha256
                   }
 
 
               except Exception as error:
 
                   print(
-                      f"{name}: ERROR: {error}"
+                      f"ERROR: {error}"
                   )
 
+
                   return {
-                      "online": False,
-                      "configs": 0,
-                      "updated": "—",
-                      "checked": checked,
-                      "sha256": None
+
+                      "online":
+                          False,
+
+                      "configs":
+                          previous.get(
+                              "configs",
+                              0
+                          ),
+
+                      "updated":
+                          previous_updated
+                          or "—",
+
+                      "checked":
+                          checked,
+
+                      "sha256":
+                          previous_sha
                   }
 
 
-          # BLACK
           black = {
 
-              "source1": check_source(
-                  "BLACK 1",
-                  SOURCES["black"]["source1"]
-              ),
+              "source1":
+                  check_source(
+                      "black",
+                      "source1",
+                      SOURCES["black"]["source1"]
+                  ),
 
-              "source2": check_source(
-                  "BLACK 2",
-                  SOURCES["black"]["source2"]
-              )
+              "source2":
+                  check_source(
+                      "black",
+                      "source2",
+                      SOURCES["black"]["source2"]
+                  )
           }
 
 
-          # WHITE-LIST
           whitelist = {
 
-              "source1": check_source(
-                  "WHITE-LIST 1",
-                  SOURCES["whitelist"]["source1"]
-              ),
+              "source1":
+                  check_source(
+                      "whitelist",
+                      "source1",
+                      SOURCES["whitelist"]["source1"]
+                  ),
 
-              "source2": check_source(
-                  "WHITE-LIST 2",
-                  SOURCES["whitelist"]["source2"]
-              )
+              "source2":
+                  check_source(
+                      "whitelist",
+                      "source2",
+                      SOURCES["whitelist"]["source2"]
+                  )
           }
 
 
-          # Все источники
           all_sources = [
+
               black["source1"],
               black["source2"],
+
               whitelist["source1"],
               whitelist["source2"]
+
           ]
 
 
-          # Общее количество строк/конфигов
           total_configs = sum(
               source["configs"]
               for source in all_sources
           )
 
 
-          # Система считается полностью работающей,
-          # только если доступны все 4 источника
           online = all(
               source["online"]
               for source in all_sources
           )
 
 
-          # Время последней проверки
-          updated = datetime.now(
+          # Время запуска workflow
+          workflow_updated = datetime.now(
               timezone.utc
           ).strftime(
               "%Y-%m-%dT%H:%M:%SZ"
           )
 
 
-          # Итоговый status.json
           status = {
 
-              "online": online,
+              "online":
+                  online,
 
-              "maintenance": False,
+              "maintenance":
+                  False,
 
               "title":
                   "ChaiVPN by Edicoral",
@@ -209,11 +310,10 @@ jobs:
                   whitelist,
 
               "updated":
-                  updated
+                  workflow_updated
           }
 
 
-          # Записываем status.json
           with open(
               "status.json",
               "w",
@@ -240,6 +340,7 @@ jobs:
           )
 
           print("==================")
+
 
           PY
 

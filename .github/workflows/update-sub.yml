@@ -41,52 +41,63 @@ jobs:
           python3 <<'PY'
           from pathlib import Path
 
+
           files = [
               "black1.txt",
               "black2.txt"
           ]
 
-          output = []
 
-          output.append("# profile-title: ☕ ChaiVPN — BLACK")
-          output.append("# profile-update-interval: 30")
-          output.append("# Назначение: ChaiVPN BLACK")
-          output.append("")
+          output = [
+              "# profile-title: ☕ ChaiVPN — BLACK",
+              "# profile-update-interval: 30",
+              "# Назначение: ChaiVPN BLACK",
+              ""
+          ]
 
-          remove_prefixes = (
+
+          # Меняем ТОЛЬКО эти строки.
+          # Всё остальное, включая updated, Date/Time
+          # и Количество, сохраняется.
+
+          replace_prefixes = (
               "# profile-title:",
               "# profile-update-interval:",
-              "# updated:",
-              "# Назначение:",
-              "# TG chat:",
-              "# TG:",
-              "# Date/Time:",
-              "# Количество:"
+              "# Назначение:"
           )
 
+
           for filename in files:
+
               text = Path(filename).read_text(
                   encoding="utf-8",
                   errors="replace"
               )
 
+
               for line in text.splitlines():
+
                   stripped = line.strip()
+
 
                   if any(
                       stripped.startswith(prefix)
-                      for prefix in remove_prefixes
+                      for prefix in replace_prefixes
                   ):
                       continue
 
+
                   output.append(line)
 
+
               output.append("")
+
 
           Path("sub-black.txt").write_text(
               "\n".join(output).rstrip() + "\n",
               encoding="utf-8"
           )
+
           PY
 
 
@@ -104,52 +115,62 @@ jobs:
           python3 <<'PY'
           from pathlib import Path
 
+
           files = [
               "white1.txt",
               "white2.txt"
           ]
 
-          output = []
 
-          output.append("# profile-title: 🍵 ChaiVPN — WHITE-LIST")
-          output.append("# profile-update-interval: 30")
-          output.append("# Назначение: ChaiVPN WHITE-LIST")
-          output.append("")
+          output = [
+              "# profile-title: 🍵 ChaiVPN — WHITE-LIST",
+              "# profile-update-interval: 30",
+              "# Назначение: ChaiVPN WHITE-LIST",
+              ""
+          ]
 
-          remove_prefixes = (
+
+          # Меняем только название,
+          # интервал и назначение.
+
+          replace_prefixes = (
               "# profile-title:",
               "# profile-update-interval:",
-              "# updated:",
-              "# Назначение:",
-              "# TG chat:",
-              "# TG:",
-              "# Date/Time:",
-              "# Количество:"
+              "# Назначение:"
           )
 
+
           for filename in files:
+
               text = Path(filename).read_text(
                   encoding="utf-8",
                   errors="replace"
               )
 
+
               for line in text.splitlines():
+
                   stripped = line.strip()
+
 
                   if any(
                       stripped.startswith(prefix)
-                      for prefix in remove_prefixes
+                      for prefix in replace_prefixes
                   ):
                       continue
 
+
                   output.append(line)
 
+
               output.append("")
+
 
           Path("sub-white.txt").write_text(
               "\n".join(output).rstrip() + "\n",
               encoding="utf-8"
           )
+
           PY
 
 

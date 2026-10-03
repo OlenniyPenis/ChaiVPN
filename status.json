@@ -1,1 +1,36 @@
-
+{
+  "online": true,
+  "maintenance": false,
+  "title": "ObxodBS by Edicoral",
+  "description": "Автоматическое обновление источников",
+  "configs": 0,
+  "black": {
+    "source1": {
+      "online": false,
+      "configs": 0,
+      "updated": "—",
+      "checked": "—"
+    },
+    "source2": {
+      "online": false,
+      "configs": 0,
+      "updated": "—",
+      "checked": "—"
+    }
+  },
+  "whitelist": {
+    "source1": {
+      "online": false,
+      "configs": 0,
+      "updated": "—",
+      "checked": "—"
+    },
+    "source2": {
+      "online": false,
+      "configs": 0,
+      "updated": "—",
+      "checked": "—"
+    }
+  },
+  "updated": "—"
+}

@@ -1,6 +1,6 @@
 {
   "online": true,
-  "maintenance": false,
+  "maintenance": true,
   "title": "ObxodBS by Edicoral",
   "description": "Автоматическое обновление источников",
   "configs": 471,

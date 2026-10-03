@@ -31,19 +31,21 @@ jobs:
 
           import json
           import hashlib
+          import os
           import urllib.request
           from datetime import datetime, timezone
 
 
+          # Получаем URL из переменных GitHub Actions
           SOURCES = {
               "black": {
-                  "source1": "${BLACK_1}",
-                  "source2": "${BLACK_2}"
+                  "source1": os.environ["BLACK_1"],
+                  "source2": os.environ["BLACK_2"]
               },
 
               "whitelist": {
-                  "source1": "${WHITE_1}",
-                  "source2": "${WHITE_2}"
+                  "source1": os.environ["WHITE_1"],
+                  "source2": os.environ["WHITE_2"]
               }
           }
 
@@ -58,11 +60,12 @@ jobs:
 
               try:
 
+                  print(f"Checking {name}: {url}")
+
                   request = urllib.request.Request(
                       url,
                       headers={
-                          "User-Agent":
-                          "GitHub-Actions"
+                          "User-Agent": "GitHub-Actions"
                       }
                   )
 
@@ -92,6 +95,11 @@ jobs:
                   ).hexdigest()
 
 
+                  print(
+                      f"{name}: OK, {len(lines)} lines"
+                  )
+
+
                   return {
                       "online": True,
                       "configs": len(lines),
@@ -104,7 +112,7 @@ jobs:
               except Exception as error:
 
                   print(
-                      f"{name}: {error}"
+                      f"{name}: ERROR: {error}"
                   )
 
                   return {
@@ -116,7 +124,9 @@ jobs:
                   }
 
 
+          # BLACK
           black = {
+
               "source1": check_source(
                   "BLACK 1",
                   SOURCES["black"]["source1"]
@@ -129,7 +139,9 @@ jobs:
           }
 
 
+          # WHITE-LIST
           whitelist = {
+
               "source1": check_source(
                   "WHITE-LIST 1",
                   SOURCES["whitelist"]["source1"]
@@ -142,6 +154,7 @@ jobs:
           }
 
 
+          # Все источники
           all_sources = [
               black["source1"],
               black["source2"],
@@ -150,18 +163,22 @@ jobs:
           ]
 
 
+          # Общее количество строк/конфигов
           total_configs = sum(
               source["configs"]
               for source in all_sources
           )
 
 
+          # Система считается полностью работающей,
+          # только если доступны все 4 источника
           online = all(
               source["online"]
               for source in all_sources
           )
 
 
+          # Время последней проверки
           updated = datetime.now(
               timezone.utc
           ).strftime(
@@ -169,6 +186,7 @@ jobs:
           )
 
 
+          # Итоговый status.json
           status = {
 
               "online": online,
@@ -195,6 +213,7 @@ jobs:
           }
 
 
+          # Записываем status.json
           with open(
               "status.json",
               "w",
@@ -209,6 +228,9 @@ jobs:
               )
 
 
+          print()
+          print("===== STATUS =====")
+
           print(
               json.dumps(
                   status,
@@ -216,6 +238,8 @@ jobs:
                   indent=2
               )
           )
+
+          print("==================")
 
           PY
 
@@ -232,7 +256,7 @@ jobs:
           git add status.json
 
           if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No changes to commit"
             exit 0
           fi
 

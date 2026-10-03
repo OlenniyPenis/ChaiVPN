@@ -2,6 +2,7 @@
 # profile-update-interval: 30
 # Назначение: ChaiVPN WHITE-LIST
 
+# Date/Time: 2026-10-03 / 15:29 (Moscow)
 
 vless://195c005f-ec14-5d06-885c-02fb42575608@185.147.26.218:443?encryption=none&pbk=jgFG50Yuw5A-La-S54Sge3vnkF3N0GVH6ZDXg15CbHg&security=reality&sid=58a148ca1ae650b1&sni=id.vk.com&type=grpc&fp=firefox#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%20%5B%2ACIDR%5D
 vless://195c005f-ec14-5d06-885c-02fb42575608@185.147.26.218:443?encryption=none&pbk=jgFG50Yuw5A-La-S54Sge3vnkF3N0GVH6ZDXg15CbHg&security=reality&sid=58a148ca1ae650b1&sni=id.vk.com&type=grpc&fp=safari#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%20%5B%2ACIDR%5D
@@ -20,6 +21,8 @@ vless://1c1baccf-91e0-4ba0-8965-9c8d022c9a98@ru-svo-1.blook.network:443?alpn=h3&
 vless://1c1baccf-91e0-4ba0-8965-9c8d022c9a98@ru-svo-1.blook.network:443?alpn=h3&extra=%7B%22noGRPCHeader%22%3Atrue%2C%22scMaxEachPostBytes%22%3A1000000%2C%22scMinPostsIntervalMs%22%3A30%2C%22xPaddingBytes%22%3A%22100-1000%22%2C%22xmux%22%3A%7B%22cMaxReuseTimes%22%3A%2216-32%22%2C%22hMaxRequestTimes%22%3A%22600-900%22%2C%22hMaxReusableSecs%22%3A%22300-900%22%2C%22maxConnections%22%3A%223-6%22%7D%7D&headerType=&mode=stream-one&path=%2FVLSpdG9k&security=tls&sni=ru-svo-1.blook.network&type=xhttp&fp=safari#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D
 hysteria2://f317b5d6-d399-4d3d-a051-89d674ae953c@msk.frkn.org:443?sni=msk.frkn.org&upmbps=0#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
 
+# Date/Time: 2026-10-03 / 19:35 (Moscow)
+# Количество: 44
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 vless://3f222a01-62d1-5e63-b9b8-6668ff0088b5@5.188.81.58:500/?type=xhttp&encryption=none&flow=&host=media.illusion-id.ru&path=%2Flive%2Fseg&mode=auto&security=tls&sni=media.illusion-id.ru&alpn=h3&fp=android#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5B%2ACIDR%5D

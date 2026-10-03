@@ -1,11 +1,7 @@
-# profile-title: 🌀 CYBERPORTAL WL — VLESS Black Mobile RU
-# profile-update-interval: 1
-# updated: 03.10.2026 19:43 MSK
-# Назначение: VLESS, мобильный чёрный список РФ
-# TG chat: @strbypass
-# TG: https://t.me/STR_BYPASS
-# Date/Time: 2026-10-03 / 19:36 (Moscow)
-# Количество: 150
+# profile-title: ☕ ChaiVPN — BLACK
+# profile-update-interval: 30
+# Назначение: ChaiVPN BLACK
+
 vless://888ea47f-3b03-4242-9199-518e051633e9@163.245.52.74:443?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&sni=www.amd.com&pbk=7SpTjRpzjzqGwZxKWQApO5JhVJ44mfcEAcx14_P10k0&sid=9e2b261394f0b3cc&spx=%2F&allowInsecure=1&fp=chrome#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%7C%20%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%20%231
 vless://888ea47f-3b03-4242-9199-518e051633e9@163.245.52.74:443?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&sni=www.amd.com&pbk=7SpTjRpzjzqGwZxKWQApO5JhVJ44mfcEAcx14_P10k0&sid=9e2b261394f0b3cc&spx=%2F&allowInsecure=1&fp=firefox#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%7C%20%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%20%232
 vless://888ea47f-3b03-4242-9199-518e051633e9@163.245.52.74:443?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&sni=www.amd.com&pbk=7SpTjRpzjzqGwZxKWQApO5JhVJ44mfcEAcx14_P10k0&sid=9e2b261394f0b3cc&spx=%2F&allowInsecure=1&fp=qq#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%7C%20%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%20%233
@@ -157,14 +153,6 @@ vmess://eyJhZGQiOiJ5ZzEueWdra2suZHBkbnMub3JnIiwiYWlkIjoiMCIsImhvc3QiOiJqbXAxLjkw
 vmess://eyJhZGQiOiJueWNxZzE5emt3YWNwbTFiLnYuM2Rucy52aXAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Ik5ZY1FnMTl6a3dhQ1BNMUIudi4zZG5zLnZpcCIsImlkIjoiZjIzYmI0MjdjMWY5NDM3Mzg3NmMyZjQzZTlmNzkwZjMiLCJuZXQiOiJ3cyIsInBhdGgiOiIvd3Mtdm1lc3MiLCJwb3J0IjoiNDQzIiwicHMiOiLwn4yAIENZQkVSUE9SVEFMIHwgVkxFU1MgQmxhY2sgTW9iaWxlIFJVIHwg8J+HrfCfh7Ag0JPQvtC90LrQvtC90LMgIzE0OSIsInNjeSI6ImF1dG8iLCJzbmkiOiJOWWNRZzE5emt3YUNQTTFCLnYuM2Rucy52aXAiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%7C%20%F0%9F%87%AD%F0%9F%87%B0%20%D0%93%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D0%B3%20%23149
 vmess://eyJ2IjoiMiIsInBzIjoi8J+MgCBDWUJFUlBPUlRBTCB8IFZMRVNTIEJsYWNrIE1vYmlsZSBSVSB8IPCfh7rwn4e4INCh0KjQkCAjMTUwIiwiYWRkIjoiY2hhdGdwdC5jb20iLCJwb3J0IjoiODQ0MyIsImlkIjoiNjA0NDE1NDgtYjY4ZS00M2IyLTgxOTEtZTNiODg0YmU0YjNjIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiJub25lIiwidGxzIjoidGxzIiwiYWxwbiI6IiIsInNuaSI6InYycmF5MS5kb3phcHAueHl6IiwicGF0aCI6Ii9sTW5zWlVONC8iLCJob3N0IjoidjJyYXkxLmRvemFwcC54eXoiLCJmcCI6IiJ9#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20%D0%A1%D0%A8%D0%90%20%23150
 
-# profile-title: 🌀 CYBERPORTAL WL — VLESS Black All RU
-# profile-update-interval: 1
-# updated: 03.10.2026 19:43 MSK
-# Назначение: VLESS, основной чёрный список РФ
-# TG chat: @strbypass
-# TG: https://t.me/STR_BYPASS
-# Date/Time: 2026-10-03 / 19:36 (Moscow)
-# Количество: 145
 vless://888ea47f-3b03-4242-9199-518e051633e9@163.245.52.74:443?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&sni=www.amd.com&pbk=7SpTjRpzjzqGwZxKWQApO5JhVJ44mfcEAcx14_P10k0&sid=9e2b261394f0b3cc&spx=%2F&allowInsecure=1&fp=chrome#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20All%20RU%20%7C%20%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%20%231
 vless://888ea47f-3b03-4242-9199-518e051633e9@163.245.52.74:443?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&sni=www.amd.com&pbk=7SpTjRpzjzqGwZxKWQApO5JhVJ44mfcEAcx14_P10k0&sid=9e2b261394f0b3cc&spx=%2F&allowInsecure=1&fp=edge#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20All%20RU%20%7C%20%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%20%232
 vless://888ea47f-3b03-4242-9199-518e051633e9@163.245.52.74:443?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&sni=www.amd.com&pbk=7SpTjRpzjzqGwZxKWQApO5JhVJ44mfcEAcx14_P10k0&sid=9e2b261394f0b3cc&spx=%2F&allowInsecure=1&fp=firefox#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20All%20RU%20%7C%20%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%20%233

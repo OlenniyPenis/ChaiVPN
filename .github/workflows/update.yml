@@ -1,1 +1,242 @@
+name: Update status
 
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check sources and update status
+        env:
+          BLACK_1: "https://example.com/black1.txt"
+          BLACK_2: "https://example.com/black2.txt"
+          WHITE_1: "https://example.com/white1.txt"
+          WHITE_2: "https://example.com/white2.txt"
+
+        run: |
+
+          python3 <<'PY'
+
+          import json
+          import hashlib
+          import urllib.request
+          from datetime import datetime, timezone
+
+
+          SOURCES = {
+              "black": {
+                  "source1": "${BLACK_1}",
+                  "source2": "${BLACK_2}"
+              },
+
+              "whitelist": {
+                  "source1": "${WHITE_1}",
+                  "source2": "${WHITE_2}"
+              }
+          }
+
+
+          def check_source(name, url):
+
+              checked = datetime.now(
+                  timezone.utc
+              ).strftime(
+                  "%Y-%m-%dT%H:%M:%SZ"
+              )
+
+              try:
+
+                  request = urllib.request.Request(
+                      url,
+                      headers={
+                          "User-Agent":
+                          "GitHub-Actions"
+                      }
+                  )
+
+                  with urllib.request.urlopen(
+                      request,
+                      timeout=30
+                  ) as response:
+
+                      data = response.read()
+
+
+                  text = data.decode(
+                      "utf-8",
+                      errors="replace"
+                  )
+
+
+                  lines = [
+                      line
+                      for line in text.splitlines()
+                      if line.strip()
+                  ]
+
+
+                  sha256 = hashlib.sha256(
+                      data
+                  ).hexdigest()
+
+
+                  return {
+                      "online": True,
+                      "configs": len(lines),
+                      "updated": "—",
+                      "checked": checked,
+                      "sha256": sha256
+                  }
+
+
+              except Exception as error:
+
+                  print(
+                      f"{name}: {error}"
+                  )
+
+                  return {
+                      "online": False,
+                      "configs": 0,
+                      "updated": "—",
+                      "checked": checked,
+                      "sha256": None
+                  }
+
+
+          black = {
+              "source1": check_source(
+                  "BLACK 1",
+                  SOURCES["black"]["source1"]
+              ),
+
+              "source2": check_source(
+                  "BLACK 2",
+                  SOURCES["black"]["source2"]
+              )
+          }
+
+
+          whitelist = {
+              "source1": check_source(
+                  "WHITE-LIST 1",
+                  SOURCES["whitelist"]["source1"]
+              ),
+
+              "source2": check_source(
+                  "WHITE-LIST 2",
+                  SOURCES["whitelist"]["source2"]
+              )
+          }
+
+
+          all_sources = [
+              black["source1"],
+              black["source2"],
+              whitelist["source1"],
+              whitelist["source2"]
+          ]
+
+
+          total_configs = sum(
+              source["configs"]
+              for source in all_sources
+          )
+
+
+          online = all(
+              source["online"]
+              for source in all_sources
+          )
+
+
+          updated = datetime.now(
+              timezone.utc
+          ).strftime(
+              "%Y-%m-%dT%H:%M:%SZ"
+          )
+
+
+          status = {
+
+              "online": online,
+
+              "maintenance": False,
+
+              "title":
+                  "ObxodBS by Edicoral",
+
+              "description":
+                  "Автоматическое обновление источников",
+
+              "configs":
+                  total_configs,
+
+              "black":
+                  black,
+
+              "whitelist":
+                  whitelist,
+
+              "updated":
+                  updated
+          }
+
+
+          with open(
+              "status.json",
+              "w",
+              encoding="utf-8"
+          ) as file:
+
+              json.dump(
+                  status,
+                  file,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+
+          print(
+              json.dumps(
+                  status,
+                  ensure_ascii=False,
+                  indent=2
+              )
+          )
+
+          PY
+
+
+      - name: Commit status.json
+        run: |
+
+          git config user.name \
+            "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add status.json
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit \
+            -m "Automatic status update"
+
+          git push

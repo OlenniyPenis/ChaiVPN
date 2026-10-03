@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ObxodBS by Edicoral</title>
+<title>ChaiVPN</title>
 
 <style>
 
@@ -183,11 +183,13 @@ h1 {
 
   border-radius: 12px;
 
-  margin-top: 22px;
+  margin-top: 12px;
 
   font-size: 16px;
 
   font-weight: bold;
+
+  transition: background 0.2s ease;
 }
 
 .button:hover {
@@ -227,10 +229,15 @@ h1 {
 
 <div class="card">
 
+
+<!-- =========================
+     HEADER
+     ========================= -->
+
 <div class="header">
 
 <h1>
-🛡️ ObxodBS
+☕ ChaiVPN
 </h1>
 
 <div
@@ -243,6 +250,10 @@ h1 {
 </div>
 
 
+<!-- =========================
+     STATUS
+     ========================= -->
+
 <div
   id="status"
   class="status"
@@ -250,6 +261,10 @@ h1 {
 Проверка состояния...
 </div>
 
+
+<!-- =========================
+     TOTAL
+     ========================= -->
 
 <div class="total">
 
@@ -309,6 +324,14 @@ h1 {
 
 </div>
 
+
+<a
+  class="button"
+  href="sub-black.txt"
+>
+☕ ОТКРЫТЬ BLACK
+</a>
+
 </div>
 
 
@@ -354,23 +377,28 @@ h1 {
 
 </div>
 
-</div>
-
 
 <a
   class="button"
-  href="sub.txt"
+  href="sub-white.txt"
 >
-🔗 ПОЛУЧИТЬ ПОДПИСКУ
+🍵 ОТКРЫТЬ WHITE-LIST
 </a>
 
+</div>
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
 
 <div
   class="footer"
   id="updated"
 >
-Последнее обновление: —
+Последняя проверка: —
 </div>
+
 
 </div>
 
@@ -389,9 +417,11 @@ async function loadStatus() {
     );
 
     if (!response.ok) {
+
       throw new Error(
         "status.json unavailable"
       );
+
     }
 
     const data =
@@ -490,7 +520,7 @@ async function loadStatus() {
 
 
     /*
-     * LAST UPDATE
+     * LAST CHECK
      */
 
     document.getElementById(
@@ -504,14 +534,15 @@ async function loadStatus() {
 
   catch (error) {
 
-    document.getElementById(
-      "status"
-    ).className =
+    const status =
+      document.getElementById(
+        "status"
+      );
+
+    status.className =
       "status offline";
 
-    document.getElementById(
-      "status"
-    ).textContent =
+    status.textContent =
       "🔴 НЕ УДАЛОСЬ ПОЛУЧИТЬ СТАТУС";
 
     console.error(error);
@@ -603,7 +634,7 @@ loadStatus();
 /*
  * AUTO REFRESH
  *
- * Обновляем страницу данных
+ * Проверяем status.json
  * каждые 60 секунд.
  */
 

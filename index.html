@@ -1,1 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>ObxodBS by Edicoral</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Arial, sans-serif;
+
+  background: #0b0d10;
+  color: #f1f1f1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.card {
+  background: #15181d;
+
+  border: 1px solid #292e36;
+  border-radius: 20px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 15px 50px rgba(0,0,0,.35);
+}
+
+.header {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: #9299a5;
+
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+.status {
+  padding: 14px;
+
+  border-radius: 12px;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.status.online {
+  background: #102417;
+  color: #6cff91;
+}
+
+.status.offline {
+  background: #281616;
+  color: #ff7777;
+}
+
+.total {
+  background: #1c2027;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.total-label {
+  color: #9299a5;
+
+  font-size: 14px;
+}
+
+.total-value {
+  font-size: 36px;
+
+  font-weight: bold;
+
+  margin-top: 6px;
+}
+
+
+/* =========================
+   ГРУППА
+   ========================= */
+
+.group {
+  background: #1c2027;
+
+  border-radius: 16px;
+
+  padding: 18px;
+
+  margin-top: 15px;
+}
+
+.group-title {
+  font-size: 20px;
+
+  font-weight: bold;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   ИСТОЧНИК
+   ========================= */
+
+.source {
+  background: #242932;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  margin-top: 10px;
+}
+
+.source-title {
+  font-weight: bold;
+
+  font-size: 16px;
+}
+
+.source-info {
+  color: #9299a5;
+
+  margin-top: 7px;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   КНОПКА
+   ========================= */
+
+.button {
+  display: block;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  background: #242932;
+
+  color: white;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  margin-top: 22px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #303641;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+  text-align: center;
+
+  color: #626a76;
+
+  margin-top: 20px;
+
+  font-size: 13px;
+}
+
+.error {
+  text-align: center;
+
+  color: #ff7777;
+
+  padding: 20px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="header">
+
+<h1>
+🛡️ ObxodBS
+</h1>
+
+<div
+  class="subtitle"
+  id="description"
+>
+Загрузка...
+</div>
+
+</div>
+
+
+<div
+  id="status"
+  class="status"
+>
+Проверка состояния...
+</div>
+
+
+<div class="total">
+
+<div class="total-label">
+ВСЕГО КОНФИГОВ
+</div>
+
+<div
+  class="total-value"
+  id="total"
+>
+—
+</div>
+
+</div>
+
+
+<!-- =========================
+     BLACK
+     ========================= -->
+
+<div class="group">
+
+<div class="group-title">
+⚫ BLACK
+</div>
+
+
+<div class="source">
+
+<div class="source-title">
+Источник 1
+</div>
+
+<div
+  class="source-info"
+  id="black-source1"
+>
+Загрузка...
+</div>
+
+</div>
+
+
+<div class="source">
+
+<div class="source-title">
+Источник 2
+</div>
+
+<div
+  class="source-info"
+  id="black-source2"
+>
+Загрузка...
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     WHITE-LIST
+     ========================= -->
+
+<div class="group">
+
+<div class="group-title">
+⚪ WHITE-LIST
+</div>
+
+
+<div class="source">
+
+<div class="source-title">
+Источник 1
+</div>
+
+<div
+  class="source-info"
+  id="white-source1"
+>
+Загрузка...
+</div>
+
+</div>
+
+
+<div class="source">
+
+<div class="source-title">
+Источник 2
+</div>
+
+<div
+  class="source-info"
+  id="white-source2"
+>
+Загрузка...
+</div>
+
+</div>
+
+</div>
+
+
+<a
+  class="button"
+  href="sub.txt"
+>
+🔗 ПОЛУЧИТЬ ПОДПИСКУ
+</a>
+
+
+<div
+  class="footer"
+  id="updated"
+>
+Последнее обновление: —
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+async function loadStatus() {
+
+  try {
+
+    const response = await fetch(
+      "status.json?cache=" +
+      Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        "status.json unavailable"
+      );
+    }
+
+    const data =
+      await response.json();
+
+
+    /*
+     * DESCRIPTION
+     */
+
+    document.getElementById(
+      "description"
+    ).textContent =
+      data.description || "";
+
+
+    /*
+     * TOTAL
+     */
+
+    document.getElementById(
+      "total"
+    ).textContent =
+      data.configs ?? "—";
+
+
+    /*
+     * STATUS
+     */
+
+    const status =
+      document.getElementById(
+        "status"
+      );
+
+
+    if (data.maintenance) {
+
+      status.className =
+        "status offline";
+
+      status.textContent =
+        "🔴 ТЕХНИЧЕСКИЕ РАБОТЫ";
+
+    }
+
+    else if (data.online) {
+
+      status.className =
+        "status online";
+
+      status.textContent =
+        "🟢 СИСТЕМА РАБОТАЕТ";
+
+    }
+
+    else {
+
+      status.className =
+        "status offline";
+
+      status.textContent =
+        "🔴 ЕСТЬ ПРОБЛЕМЫ";
+
+    }
+
+
+    /*
+     * BLACK
+     */
+
+    renderSource(
+      "black-source1",
+      data.black?.source1
+    );
+
+    renderSource(
+      "black-source2",
+      data.black?.source2
+    );
+
+
+    /*
+     * WHITE-LIST
+     */
+
+    renderSource(
+      "white-source1",
+      data.whitelist?.source1
+    );
+
+    renderSource(
+      "white-source2",
+      data.whitelist?.source2
+    );
+
+
+    /*
+     * LAST UPDATE
+     */
+
+    document.getElementById(
+      "updated"
+    ).textContent =
+      "Последняя проверка: " +
+      (data.updated || "—");
+
+
+  }
+
+  catch (error) {
+
+    document.getElementById(
+      "status"
+    ).className =
+      "status offline";
+
+    document.getElementById(
+      "status"
+    ).textContent =
+      "🔴 НЕ УДАЛОСЬ ПОЛУЧИТЬ СТАТУС";
+
+    console.error(error);
+
+  }
+
+}
+
+
+/*
+ * SOURCE RENDER
+ */
+
+function renderSource(
+  elementId,
+  source
+) {
+
+  const element =
+    document.getElementById(
+      elementId
+    );
+
+
+  if (!source) {
+
+    element.innerHTML =
+      "🔴 Нет данных";
+
+    return;
+
+  }
+
+
+  const online =
+    source.online === true;
+
+
+  const status =
+    online
+      ? "🟢 Источник работает"
+      : "🔴 Источник недоступен";
+
+
+  const configs =
+    source.configs ??
+    "—";
+
+
+  const updated =
+    source.updated ||
+    "—";
+
+
+  const checked =
+    source.checked ||
+    "—";
+
+
+  element.innerHTML =
+
+    status +
+
+    "<br>" +
+
+    "📦 Конфигов: " +
+    configs +
+
+    "<br>" +
+
+    "🕐 Обновление: " +
+    updated +
+
+    "<br>" +
+
+    "🔎 Проверено: " +
+    checked;
+
+}
+
+
+/*
+ * INITIAL LOAD
+ */
+
+loadStatus();
+
+
+/*
+ * AUTO REFRESH
+ *
+ * Обновляем страницу данных
+ * каждые 60 секунд.
+ */
+
+setInterval(
+  loadStatus,
+  60000
+);
+
+</script>
+
+</body>
+</html>

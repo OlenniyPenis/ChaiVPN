@@ -38,11 +38,56 @@ jobs:
 
           echo "Building sub-black.txt..."
 
-          {
-            cat black1.txt
-            echo
-            cat black2.txt
-          } > sub-black.txt
+          python3 <<'PY'
+          from pathlib import Path
+
+          files = [
+              "black1.txt",
+              "black2.txt"
+          ]
+
+          output = []
+
+          output.append("# profile-title: ☕ ChaiVPN — BLACK")
+          output.append("# profile-update-interval: 30")
+          output.append("# Назначение: ChaiVPN BLACK")
+          output.append("")
+
+          remove_prefixes = (
+              "# profile-title:",
+              "# profile-update-interval:",
+              "# updated:",
+              "# Назначение:",
+              "# TG chat:",
+              "# TG:",
+              "# Date/Time:",
+              "# Количество:"
+          )
+
+          for filename in files:
+              text = Path(filename).read_text(
+                  encoding="utf-8",
+                  errors="replace"
+              )
+
+              for line in text.splitlines():
+                  stripped = line.strip()
+
+                  if any(
+                      stripped.startswith(prefix)
+                      for prefix in remove_prefixes
+                  ):
+                      continue
+
+                  output.append(line)
+
+              output.append("")
+
+          Path("sub-black.txt").write_text(
+              "\n".join(output).rstrip() + "\n",
+              encoding="utf-8"
+          )
+          PY
 
 
           echo "Downloading WHITE-LIST sources..."
@@ -56,11 +101,56 @@ jobs:
 
           echo "Building sub-white.txt..."
 
-          {
-            cat white1.txt
-            echo
-            cat white2.txt
-          } > sub-white.txt
+          python3 <<'PY'
+          from pathlib import Path
+
+          files = [
+              "white1.txt",
+              "white2.txt"
+          ]
+
+          output = []
+
+          output.append("# profile-title: 🍵 ChaiVPN — WHITE-LIST")
+          output.append("# profile-update-interval: 30")
+          output.append("# Назначение: ChaiVPN WHITE-LIST")
+          output.append("")
+
+          remove_prefixes = (
+              "# profile-title:",
+              "# profile-update-interval:",
+              "# updated:",
+              "# Назначение:",
+              "# TG chat:",
+              "# TG:",
+              "# Date/Time:",
+              "# Количество:"
+          )
+
+          for filename in files:
+              text = Path(filename).read_text(
+                  encoding="utf-8",
+                  errors="replace"
+              )
+
+              for line in text.splitlines():
+                  stripped = line.strip()
+
+                  if any(
+                      stripped.startswith(prefix)
+                      for prefix in remove_prefixes
+                  ):
+                      continue
+
+                  output.append(line)
+
+              output.append("")
+
+          Path("sub-white.txt").write_text(
+              "\n".join(output).rstrip() + "\n",
+              encoding="utf-8"
+          )
+          PY
 
 
           echo "BLACK:"

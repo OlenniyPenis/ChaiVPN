@@ -1,40 +1,40 @@
 {
-  "online": false,
+  "online": true,
   "maintenance": false,
   "title": "ObxodBS by Edicoral",
   "description": "Автоматическое обновление источников",
-  "configs": 0,
+  "configs": 439,
   "black": {
     "source1": {
-      "online": false,
-      "configs": 0,
+      "online": true,
+      "configs": 121,
       "updated": "—",
-      "checked": "2026-10-03T15:21:02Z",
-      "sha256": null
+      "checked": "2026-10-03T15:27:29Z",
+      "sha256": "95fe4a85af2a93b128640a153f3d2a1748cd1f555fad85f696e9aab45369ce80"
     },
     "source2": {
-      "online": false,
-      "configs": 0,
+      "online": true,
+      "configs": 157,
       "updated": "—",
-      "checked": "2026-10-03T15:21:02Z",
-      "sha256": null
+      "checked": "2026-10-03T15:27:30Z",
+      "sha256": "0e709eb5a321e9f1b14e6d790f1c60faeb6f1963681faf0df9374dd9e6bba304"
     }
   },
   "whitelist": {
     "source1": {
-      "online": false,
-      "configs": 0,
+      "online": true,
+      "configs": 106,
       "updated": "—",
-      "checked": "2026-10-03T15:21:02Z",
-      "sha256": null
+      "checked": "2026-10-03T15:27:31Z",
+      "sha256": "e61c06b5ec2a208119723bd576978e649dce8e4f4d2e3f515efd02a1e1632569"
     },
     "source2": {
-      "online": false,
-      "configs": 0,
+      "online": true,
+      "configs": 55,
       "updated": "—",
-      "checked": "2026-10-03T15:21:02Z",
-      "sha256": null
+      "checked": "2026-10-03T15:27:32Z",
+      "sha256": "bfe8a52185d672f95bb7432d88a8dcf801f871056b93d96098b15b566b835d3f"
     }
   },
-  "updated": "2026-10-03T15:21:02Z"
+  "updated": "2026-10-03T15:27:32Z"
 }

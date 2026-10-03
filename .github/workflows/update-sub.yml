@@ -123,7 +123,7 @@ jobs:
 
 
           output = [
-              "# profile-title: 🍵 ChaiVPN — WHITE-LIST",
+              "# profile-title: ☕ ChaiVPN — WHITE-LIST",
               "# profile-update-interval: 30",
               "# Назначение: ChaiVPN WHITE-LIST",
               ""

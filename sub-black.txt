@@ -2,7 +2,7 @@
 # profile-update-interval: 30
 # Назначение: ChaiVPN BLACK
 
-# updated: 05.10.2026 04:05 MSK
+# updated: 05.10.2026 05:08 MSK
 # TG chat: @strbypass
 # TG: https://t.me/STR_BYPASS
 # Date/Time: 2026-10-05 / 03:55 (Moscow)
@@ -156,7 +156,7 @@ trojan://f8b-U5TxjNRYKLvU0Js_6YeMCdj_82km@cz-musicc.moritech.net:443/?type=grpc&
 trojan://f8b-U5TxjNRYKLvU0Js_6YeMCdj_82km@cz-musicc.moritech.net:443/?type=grpc&serviceName=grpcbeast&security=tls&alpn=h2&fp=ios#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%7C%20%F0%9F%87%A8%F0%9F%87%BF%20%D0%A7%D0%B5%D1%85%D0%B8%D1%8F%20%23147
 trojan://f8b-U5TxjNRYKLvU0Js_6YeMCdj_82km@cz-musicc.moritech.net:443?type=grpc&serviceName=grpcbeast&security=tls&alpn=h2&fp=chrome#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%7C%20%F0%9F%87%A8%F0%9F%87%BF%20%D0%A7%D0%B5%D1%85%D0%B8%D1%8F%20%23148
 
-# updated: 05.10.2026 04:05 MSK
+# updated: 05.10.2026 05:08 MSK
 # TG chat: @strbypass
 # TG: https://t.me/STR_BYPASS
 # Date/Time: 2026-10-05 / 03:55 (Moscow)

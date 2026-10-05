@@ -3,20 +3,20 @@
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ ВЕРНУЛСЯ! С НОВОЙ СИСТЕМОЙ И КОНФИГАМИ!",
-  "configs": 323,
+  "configs": 426,
   "black": {
     "source1": {
       "online": true,
       "configs": 70,
       "updated": "05.10.2026 16:13 MSK",
-      "checked": "2026-10-05T13:45:40Z",
+      "checked": "2026-10-05T14:14:42Z",
       "sha256": "76123a8f08ae08deed26b3488dc19d71974cb9e1083aa82bc5c57d1a7e501c32"
     },
     "source2": {
       "online": true,
       "configs": 158,
       "updated": "05.10.2026 16:13 MSK",
-      "checked": "2026-10-05T13:45:58Z",
+      "checked": "2026-10-05T14:14:43Z",
       "sha256": "34e9993297e5c733f3f6907155fbda069723904ff87f1718eac3358990a5de3d"
     }
   },
@@ -25,16 +25,16 @@
       "online": true,
       "configs": 83,
       "updated": "—",
-      "checked": "2026-10-05T13:45:59Z",
+      "checked": "2026-10-05T14:14:44Z",
       "sha256": "f1187f61d600effd9d10a4dcea791fa2749a408ee342bbf14af815253cbb91f7"
     },
     "source2": {
       "online": true,
-      "configs": 12,
+      "configs": 115,
       "updated": "—",
-      "checked": "2026-10-05T13:45:59Z",
-      "sha256": "a6a4ad586701d29772fe7936acc49bfd40c3871af4695909450ab91c59a5b233"
+      "checked": "2026-10-05T14:14:44Z",
+      "sha256": "fe0af9f36f068c90e5706b322d3613f58136a086679c5de69c029f6ea3c4bb09"
     }
   },
-  "updated": "2026-10-05T13:45:59Z"
+  "updated": "2026-10-05T14:14:44Z"
 }

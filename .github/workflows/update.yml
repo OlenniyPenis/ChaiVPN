@@ -23,6 +23,8 @@ jobs:
           BLACK_2: "https://warp-gen.cyb-portal.org/CP-003"
           WHITE_1: "https://raw.githubusercontent.com/nwl1909/do/refs/heads/main/configibf"
           WHITE_2: "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-all.txt"
+          EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
+          EXTRA_WHITE_2: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-1.txt"
 
         run: |
 
@@ -45,6 +47,11 @@ jobs:
               "whitelist": {
                   "source1": os.environ["WHITE_1"],
                   "source2": os.environ["WHITE_2"]
+              },
+
+              "extra_white": {
+                  "source1": os.environ["EXTRA_WHITE_1"],
+                  "source2": os.environ["EXTRA_WHITE_2"]
               }
           }
 
@@ -278,6 +285,28 @@ jobs:
 
 
           # ==========================================
+          # EXTRA-WHITE
+          # ==========================================
+
+          extra_white = {
+
+              "source1":
+                  check_source(
+                      "extra_white",
+                      "source1",
+                      SOURCES["extra_white"]["source1"]
+                  ),
+
+              "source2":
+                  check_source(
+                      "extra_white",
+                      "source2",
+                      SOURCES["extra_white"]["source2"]
+                  )
+          }
+
+
+          # ==========================================
           # ОБЩАЯ СТАТИСТИКА
           # ==========================================
 
@@ -287,7 +316,10 @@ jobs:
               black["source2"],
 
               whitelist["source1"],
-              whitelist["source2"]
+              whitelist["source2"],
+
+              extra_white["source1"],
+              extra_white["source2"]
 
           ]
 
@@ -339,6 +371,9 @@ jobs:
 
               "whitelist":
                   whitelist,
+
+              "extra_white":
+                  extra_white,
 
               "updated":
                   checked

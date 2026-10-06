@@ -18,6 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+
       - name: Update BLACK, WHITE and EXTRA-WHITE files
         env:
           BLACK_1: "https://warp-gen.cyb-portal.org/CP-003"
@@ -27,8 +28,10 @@ jobs:
           EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
           EXTRA_WHITE_2: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-1.txt"
 
+
         run: |
           set -e
+
 
           echo "Downloading BLACK sources..."
 
@@ -37,6 +40,7 @@ jobs:
 
           curl -L --fail --silent --show-error \
             "$BLACK_2" > black2.txt
+
 
           echo "Building sub-black.txt..."
 
@@ -55,6 +59,7 @@ jobs:
           curl -L --fail --silent --show-error \
             "$WHITE_2" > white2.txt
 
+
           echo "Building sub-white.txt..."
 
           {
@@ -72,12 +77,21 @@ jobs:
           curl -L --fail --silent --show-error \
             "$EXTRA_WHITE_2" > extra-white2.txt
 
+
           echo "Building sub-extra-white.txt..."
 
           {
-            cat extra-white1.txt
+            echo "# profile-title: chaivpv-extra-white"
+            echo "# profile-update-interval: 30"
+            echo "# announce: ChaiVPN Extra-White"
             echo
+
+            cat extra-white1.txt
+
+            echo
+
             cat extra-white2.txt
+
           } > sub-extra-white.txt
 
 
@@ -100,15 +114,18 @@ jobs:
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
+
           git add \
             sub-black.txt \
             sub-white.txt \
             sub-extra-white.txt
 
+
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
+
 
           git commit \
             -m "Automatic text sources update"

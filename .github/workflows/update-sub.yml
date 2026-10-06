@@ -33,9 +33,7 @@ jobs:
         run: |
           set -e
 
-          echo "================================="
-          echo "Downloading BLACK sources..."
-          echo "================================="
+          echo "Downloading BLACK..."
 
           curl -L --fail --silent --show-error \
             "$BLACK_1" > black1.txt
@@ -44,25 +42,32 @@ jobs:
             "$BLACK_2" > black2.txt
 
 
+          echo "Cleaning BLACK metadata..."
+
+          sed -i -E \
+            '/^[[:space:]]*#?[[:space:]]*profile-title[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*profile-update-interval[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*support-url[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*profile-web-page-url[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*announce[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*subscription-userinfo[[:space:]]*:/Id' \
+            black1.txt black2.txt
+
+
           echo "Building sub-black.txt..."
 
           {
             echo "profile-title: ☕ ChaiVPN-Black"
-            echo "#profile-update-interval: 30"
-            echo "#announce: ☕ ChaiVPN-Black"
             echo
 
             cat black1.txt
             echo
-
             cat black2.txt
 
           } > sub-black.txt
 
 
-          echo "================================="
-          echo "Downloading WHITE sources..."
-          echo "================================="
+          echo "Downloading WHITE..."
 
           curl -L --fail --silent --show-error \
             "$WHITE_1" > white1.txt
@@ -71,25 +76,32 @@ jobs:
             "$WHITE_2" > white2.txt
 
 
+          echo "Cleaning WHITE metadata..."
+
+          sed -i -E \
+            '/^[[:space:]]*#?[[:space:]]*profile-title[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*profile-update-interval[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*support-url[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*profile-web-page-url[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*announce[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*subscription-userinfo[[:space:]]*:/Id' \
+            white1.txt white2.txt
+
+
           echo "Building sub-white.txt..."
 
           {
             echo "profile-title: ☕ ChaiVPN-White"
-            echo "#profile-update-interval: 30"
-            echo "#announce: ☕ ChaiVPN-White"
             echo
 
             cat white1.txt
             echo
-
             cat white2.txt
 
           } > sub-white.txt
 
 
-          echo "================================="
-          echo "Downloading EXTRA-WHITE sources..."
-          echo "================================="
+          echo "Downloading EXTRA-WHITE..."
 
           curl -L --fail --silent --show-error \
             "$EXTRA_WHITE_1" > extra-white1.txt
@@ -98,17 +110,26 @@ jobs:
             "$EXTRA_WHITE_2" > extra-white2.txt
 
 
+          echo "Cleaning EXTRA-WHITE metadata..."
+
+          sed -i -E \
+            '/^[[:space:]]*#?[[:space:]]*profile-title[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*profile-update-interval[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*support-url[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*profile-web-page-url[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*announce[[:space:]]*:/Id;
+             /^[[:space:]]*#?[[:space:]]*subscription-userinfo[[:space:]]*:/Id' \
+            extra-white1.txt extra-white2.txt
+
+
           echo "Building sub-extra-white.txt..."
 
           {
             echo "profile-title: ☕ ChaiVPN-Extra-White"
-            echo "#profile-update-interval: 30"
-            echo "#announce: ☕ ChaiVPN-Extra-White"
             echo
 
             cat extra-white1.txt
             echo
-
             cat extra-white2.txt
 
           } > sub-extra-white.txt

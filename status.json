@@ -10,7 +10,7 @@
       "title": "🌀 CYBERPORTAL WL — VLESS Black All RU",
       "configs": 122,
       "updated": "06.10.2026 22:05 MSK",
-      "checked": "2026-10-06T19:42:15Z",
+      "checked": "2026-10-06T20:10:12Z",
       "sha256": "184b270435f8f9508d686ab84f8af9fa2fe85985a4c240d8113531597eb2f634"
     },
     "source2": {
@@ -18,7 +18,7 @@
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 158,
       "updated": "06.10.2026 22:21 MSK",
-      "checked": "2026-10-06T19:42:27Z",
+      "checked": "2026-10-06T20:10:13Z",
       "sha256": "b57f0b359d824f4168914b878969d0c8dfd0b49f2cd965ce39bf098343795e22"
     }
   },
@@ -28,7 +28,7 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 78,
       "updated": "—",
-      "checked": "2026-10-06T19:42:29Z",
+      "checked": "2026-10-06T20:10:15Z",
       "sha256": "a9c7d46aca06ed6f64dc4bfb4503a5e655daa24d385949c2cd847d93345ea34a"
     },
     "source2": {
@@ -36,7 +36,7 @@
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
       "configs": 76,
       "updated": "—",
-      "checked": "2026-10-06T19:42:29Z",
+      "checked": "2026-10-06T20:10:15Z",
       "sha256": "15e7915a735488d3fb4e5733710481bdbe7882b66722a4804f06aa5ca28ee890"
     }
   },
@@ -46,7 +46,7 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 314,
       "updated": "22:42 06/10/2026",
-      "checked": "2026-10-06T19:42:29Z",
+      "checked": "2026-10-06T20:10:16Z",
       "sha256": "26173efbbadcd1dbf2f1f9e07a4957e8cfd8482cb7f9a6ca888baf385bff0fa8"
     },
     "source2": {
@@ -54,9 +54,9 @@
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
       "updated": "22:30 06/10/2026",
-      "checked": "2026-10-06T19:42:29Z",
+      "checked": "2026-10-06T20:10:16Z",
       "sha256": "c0413057996ca77cb5123942b7b3b15578ac79e8bc45f52c90951f6a148aa0c2"
     }
   },
-  "updated": "2026-10-06T19:42:29Z"
+  "updated": "2026-10-06T20:10:16Z"
 }

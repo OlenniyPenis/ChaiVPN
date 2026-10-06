@@ -19,21 +19,23 @@ jobs:
         uses: actions/checkout@v4
 
 
-      - name: Update BLACK, WHITE and EXTRA-WHITE files
+      - name: Download and build subscriptions
         env:
           BLACK_1: "https://warp-gen.cyb-portal.org/CP-003"
           BLACK_2: "https://warp-gen.cyb-portal.org/CP-002"
+
           WHITE_1: "https://raw.githubusercontent.com/nwl1909/do/refs/heads/main/configibf"
           WHITE_2: "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-all.txt"
+
           EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
           EXTRA_WHITE_2: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-1.txt"
-
 
         run: |
           set -e
 
-
+          echo "================================="
           echo "Downloading BLACK sources..."
+          echo "================================="
 
           curl -L --fail --silent --show-error \
             "$BLACK_1" > black1.txt
@@ -45,13 +47,22 @@ jobs:
           echo "Building sub-black.txt..."
 
           {
+            echo "profile-title: ☕ ChaiVPN-Black"
+            echo "#profile-update-interval: 30"
+            echo "#announce: ☕ ChaiVPN-Black"
+            echo
+
             cat black1.txt
             echo
+
             cat black2.txt
+
           } > sub-black.txt
 
 
-          echo "Downloading WHITE-LIST sources..."
+          echo "================================="
+          echo "Downloading WHITE sources..."
+          echo "================================="
 
           curl -L --fail --silent --show-error \
             "$WHITE_1" > white1.txt
@@ -63,13 +74,22 @@ jobs:
           echo "Building sub-white.txt..."
 
           {
+            echo "profile-title: ☕ ChaiVPN-White"
+            echo "#profile-update-interval: 30"
+            echo "#announce: ☕ ChaiVPN-White"
+            echo
+
             cat white1.txt
             echo
+
             cat white2.txt
+
           } > sub-white.txt
 
 
+          echo "================================="
           echo "Downloading EXTRA-WHITE sources..."
+          echo "================================="
 
           curl -L --fail --silent --show-error \
             "$EXTRA_WHITE_1" > extra-white1.txt
@@ -81,13 +101,12 @@ jobs:
           echo "Building sub-extra-white.txt..."
 
           {
-            echo "# profile-title: chaivpv-extra-white"
-            echo "# profile-update-interval: 30"
-            echo "# announce: ChaiVPN Extra-White"
+            echo "profile-title: ☕ ChaiVPN-Extra-White"
+            echo "#profile-update-interval: 30"
+            echo "#announce: ☕ ChaiVPN-Extra-White"
             echo
 
             cat extra-white1.txt
-
             echo
 
             cat extra-white2.txt
@@ -95,13 +114,17 @@ jobs:
           } > sub-extra-white.txt
 
 
-          echo "===== BLACK ====="
+          echo "================================="
+          echo "RESULT"
+          echo "================================="
+
+          echo "BLACK:"
           wc -l sub-black.txt
 
-          echo "===== WHITE-LIST ====="
+          echo "WHITE:"
           wc -l sub-white.txt
 
-          echo "===== EXTRA-WHITE ====="
+          echo "EXTRA-WHITE:"
           wc -l sub-extra-white.txt
 
 

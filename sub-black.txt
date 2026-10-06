@@ -1,10 +1,10 @@
 profile-title: ☕ ChaiVPN-Black
+#profile-update-interval: 30
 
 # updated: 06.10.2026 12:40 MSK
 # Назначение: VLESS, мобильный чёрный список РФ
 # TG chat: @strbypass
 # TG: https://t.me/STR_BYPASS
-# Date/Time: 2026-10-06 / 12:29 (Moscow)
 # Количество: 150
 vless://2b781b4a-5942-48e0-a7f3-5a07b7b488c1@78.159.131.79:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI&security=reality&sid=15bcc0a77c3cacdf&sni=nl-root.sworkingvpn.com&type=tcp#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%231
 vless://2b781b4a-5942-48e0-a7f3-5a07b7b488c1@113.30.152.2:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=be-root.sworkingvpn.com&fp=random&pbk=cceRo0o9bFMlCNVahZCrQWRzMAsR5M6abWXADIapY0w&sid=15bcc0a77c3cacdf&type=tcp#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20Mobile%20RU%20%232
@@ -161,7 +161,6 @@ trojan://mitivpn@199.232.78.101:443?security=tls&type=ws&host=mitivpn---deb--s--
 # Назначение: VLESS, основной чёрный список РФ
 # TG chat: @strbypass
 # TG: https://t.me/STR_BYPASS
-# Date/Time: 2026-10-06 / 12:29 (Moscow)
 # Количество: 383
 vless://83fd1766-8d30-444e-a450-3ad597a26930@185.207.1.121:51587?type=xhttp&encryption=none&security=tls&sni=spb1.corpawave.com&host=spb1.corpawave.com&path=%2Fcdn&mode=auto&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=ios#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20All%20RU%20%231
 vless://83fd1766-8d30-444e-a450-3ad597a26930@185.207.1.121:51587?type=xhttp&encryption=none&security=tls&sni=spb1.corpawave.com&host=spb1.corpawave.com&path=%2Fcdn&mode=auto&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=qq#%F0%9F%8C%80%20CYBERPORTAL%20%7C%20VLESS%20Black%20All%20RU%20%232

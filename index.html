@@ -165,6 +165,33 @@ h1 {
 
 
 /* =========================
+   КРАСНОЕ ПРЕДУПРЕЖДЕНИЕ
+   ========================= */
+
+.warning {
+  background: #2b1414;
+
+  border: 1px solid #6b2929;
+
+  border-radius: 12px;
+
+  padding: 14px;
+
+  margin-top: 12px;
+
+  text-align: center;
+
+  color: #ff5555;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
    КНОПКА
    ========================= */
 
@@ -389,6 +416,65 @@ h1 {
 
 
 <!-- =========================
+     EXTRA-WHITE
+     ========================= -->
+
+<div class="group">
+
+<div class="group-title">
+🔴 EXTRA-WHITE
+</div>
+
+
+<div class="source">
+
+<div class="source-title">
+Источник 1
+</div>
+
+<div
+  class="source-info"
+  id="extra-white-source1"
+>
+Загрузка...
+</div>
+
+</div>
+
+
+<div class="source">
+
+<div class="source-title">
+Источник 2
+</div>
+
+<div
+  class="source-info"
+  id="extra-white-source2"
+>
+Загрузка...
+</div>
+
+</div>
+
+
+<div class="warning">
+⚠️ ВНИМАНИЕ! В EXTRA-WHITE ОЧЕНЬ МНОГО КОНФИГОВ.<br>
+БУДЬТЕ ОСТОРОЖНЫ ПРИ ИСПОЛЬЗОВАНИИ.
+</div>
+
+
+<a
+  class="button"
+  href="sub-extra-white.txt"
+>
+🔴 ОТКРЫТЬ EXTRA-WHITE
+</a>
+
+</div>
+
+
+<!-- =========================
      FOOTER
      ========================= -->
 
@@ -516,6 +602,21 @@ async function loadStatus() {
     renderSource(
       "white-source2",
       data.whitelist?.source2
+    );
+
+
+    /*
+     * EXTRA-WHITE
+     */
+
+    renderSource(
+      "extra-white-source1",
+      data.extra_white?.source1
+    );
+
+    renderSource(
+      "extra-white-source2",
+      data.extra_white?.source2
     );
 
 

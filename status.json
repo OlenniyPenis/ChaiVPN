@@ -9,14 +9,14 @@
       "online": true,
       "configs": 522,
       "updated": "06.10.2026 07:50 MSK",
-      "checked": "2026-10-06T08:12:02Z",
+      "checked": "2026-10-06T08:43:47Z",
       "sha256": "c11e65d5b9cd13aaa40b54ad14904ea3fe95b4b9fecd4dada095609d01dd84c4"
     },
     "source2": {
       "online": true,
       "configs": 157,
       "updated": "06.10.2026 07:50 MSK",
-      "checked": "2026-10-06T08:12:06Z",
+      "checked": "2026-10-06T08:43:49Z",
       "sha256": "052fdedfb25f4e168c081bae8a29195eace5c1fd8f842731c9ab3926d5bbadbc"
     }
   },
@@ -25,16 +25,16 @@
       "online": true,
       "configs": 87,
       "updated": "—",
-      "checked": "2026-10-06T08:12:08Z",
+      "checked": "2026-10-06T08:43:50Z",
       "sha256": "5f6a9d0fe6e5a02f6f34ca44fe91e5d0afe37f2634a23b46540efe7a758dbe07"
     },
     "source2": {
       "online": true,
       "configs": 89,
       "updated": "—",
-      "checked": "2026-10-06T08:12:08Z",
+      "checked": "2026-10-06T08:43:50Z",
       "sha256": "97cc69c8c2c6d01758c2cff7a155c46bf55f3ccfb35ed5d77741eb11b23ae2ad"
     }
   },
-  "updated": "2026-10-06T08:12:08Z"
+  "updated": "2026-10-06T08:43:50Z"
 }

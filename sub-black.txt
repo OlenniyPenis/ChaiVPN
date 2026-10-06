@@ -1,3 +1,7 @@
+profile-title: ☕ ChaiVPN-Black
+#profile-update-interval: 30
+#announce: ☕ ChaiVPN-Black
+
 # profile-title: 🌀 CYBERPORTAL WL — VLESS Black Mobile RU
 # profile-update-interval: 1
 # updated: 06.10.2026 12:40 MSK

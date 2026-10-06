@@ -1,6 +1,6 @@
-# profile-title: chaivpv-extra-white
-# profile-update-interval: 30
-# announce: ChaiVPN Extra-White
+profile-title: ☕ ChaiVPN-Extra-White
+#profile-update-interval: 30
+#announce: ☕ ChaiVPN-Extra-White
 
 #profile-title: bypass-all t.me/rjsxrd
 #profile-update-interval: 1

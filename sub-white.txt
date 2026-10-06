@@ -1,3 +1,7 @@
+profile-title: ☕ ChaiVPN-White
+#profile-update-interval: 30
+#announce: ☕ ChaiVPN-White
+
 # profile-title: 🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)
 # profile-update-interval: 1
 # Date/Time: 2026-10-06 / 07:18 (Moscow)

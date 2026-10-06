@@ -14,15 +14,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update BLACK and WHITE files
+      - name: Update BLACK, WHITE and EXTRA-WHITE files
         env:
           BLACK_1: "https://warp-gen.cyb-portal.org/CP-003"
           BLACK_2: "https://warp-gen.cyb-portal.org/CP-002"
           WHITE_1: "https://raw.githubusercontent.com/nwl1909/do/refs/heads/main/configibf"
           WHITE_2: "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-all.txt"
+          EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
+          EXTRA_WHITE_2: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-1.txt"
 
         run: |
           set -e
@@ -35,70 +38,13 @@ jobs:
           curl -L --fail --silent --show-error \
             "$BLACK_2" > black2.txt
 
-
           echo "Building sub-black.txt..."
 
-          python3 <<'PY'
-          from pathlib import Path
-
-
-          files = [
-              "black1.txt",
-              "black2.txt"
-          ]
-
-
-          output = [
-              "# profile-title: ☕ ChaiVPN — BLACK",
-              "# profile-update-interval: 30",
-              "# Назначение: ChaiVPN BLACK",
-              ""
-          ]
-
-
-          # Меняем ТОЛЬКО эти строки.
-          # Всё остальное, включая updated, Date/Time
-          # и Количество, сохраняется.
-
-          replace_prefixes = (
-              "# profile-title:",
-              "# profile-update-interval:",
-              "# Назначение:"
-          )
-
-
-          for filename in files:
-
-              text = Path(filename).read_text(
-                  encoding="utf-8",
-                  errors="replace"
-              )
-
-
-              for line in text.splitlines():
-
-                  stripped = line.strip()
-
-
-                  if any(
-                      stripped.startswith(prefix)
-                      for prefix in replace_prefixes
-                  ):
-                      continue
-
-
-                  output.append(line)
-
-
-              output.append("")
-
-
-          Path("sub-black.txt").write_text(
-              "\n".join(output).rstrip() + "\n",
-              encoding="utf-8"
-          )
-
-          PY
+          {
+            cat black1.txt
+            echo
+            cat black2.txt
+          } > sub-black.txt
 
 
           echo "Downloading WHITE-LIST sources..."
@@ -109,76 +55,40 @@ jobs:
           curl -L --fail --silent --show-error \
             "$WHITE_2" > white2.txt
 
-
           echo "Building sub-white.txt..."
 
-          python3 <<'PY'
-          from pathlib import Path
+          {
+            cat white1.txt
+            echo
+            cat white2.txt
+          } > sub-white.txt
 
 
-          files = [
-              "white1.txt",
-              "white2.txt"
-          ]
+          echo "Downloading EXTRA-WHITE sources..."
+
+          curl -L --fail --silent --show-error \
+            "$EXTRA_WHITE_1" > extra-white1.txt
+
+          curl -L --fail --silent --show-error \
+            "$EXTRA_WHITE_2" > extra-white2.txt
+
+          echo "Building sub-extra-white.txt..."
+
+          {
+            cat extra-white1.txt
+            echo
+            cat extra-white2.txt
+          } > sub-extra-white.txt
 
 
-          output = [
-              "# profile-title: ☕ ChaiVPN — WHITE-LIST",
-              "# profile-update-interval: 30",
-              "# Назначение: ChaiVPN WHITE-LIST",
-              ""
-          ]
-
-
-          # Меняем только название,
-          # интервал и назначение.
-
-          replace_prefixes = (
-              "# profile-title:",
-              "# profile-update-interval:",
-              "# Назначение:"
-          )
-
-
-          for filename in files:
-
-              text = Path(filename).read_text(
-                  encoding="utf-8",
-                  errors="replace"
-              )
-
-
-              for line in text.splitlines():
-
-                  stripped = line.strip()
-
-
-                  if any(
-                      stripped.startswith(prefix)
-                      for prefix in replace_prefixes
-                  ):
-                      continue
-
-
-                  output.append(line)
-
-
-              output.append("")
-
-
-          Path("sub-white.txt").write_text(
-              "\n".join(output).rstrip() + "\n",
-              encoding="utf-8"
-          )
-
-          PY
-
-
-          echo "BLACK:"
+          echo "===== BLACK ====="
           wc -l sub-black.txt
 
-          echo "WHITE-LIST:"
+          echo "===== WHITE-LIST ====="
           wc -l sub-white.txt
+
+          echo "===== EXTRA-WHITE ====="
+          wc -l sub-extra-white.txt
 
 
       - name: Commit updated files
@@ -190,7 +100,10 @@ jobs:
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sub-black.txt sub-white.txt
+          git add \
+            sub-black.txt \
+            sub-white.txt \
+            sub-extra-white.txt
 
           if git diff --cached --quiet; then
             echo "No changes"

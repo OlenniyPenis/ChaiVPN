@@ -1,4 +1,4 @@
-profile-title: ☕ ChaiVPN-Extra-White
+#profile-title: ☕ ChaiVPN-Extra-White
 #profile-update-interval: 30
 
 
@@ -358,7 +358,6 @@ vless://11aabba0-5fd1-4f15-8068-74c1a466cefc@193.163.203.170:443?security=realit
 vless://ee18d188-14cc-417e-beb1-70e4add6d023@179.198.49.99:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=iwHKqXfMtE61bupFq0qdpc8_uGwQswGc3JpLvDVB9Wo&sid=088b263ae349cc97&sni=pl1.nztvpn.com#Бесплатный VPN tg:VLESSFORU 🇵🇱%20t.me%2Frjsxrd
 vless://c4edb87e-8544-4fa4-bd1c-b0cda9a34b46@188.114.97.6:443?security=tls&type=ws&host=a.cwvps.eu.org&path=%2Fws&sni=a.cwvps.eu.org&fp=unsafe&cs=TLS_AES_256_GCM_SHA384%3ATLS_CHACHA20_POLY1305_SHA256%3ATLS_AES_128_GCM_SHA256%3ATLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384%3ATLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384%3ATLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256%3ATLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256%3ATLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256%3ATLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256%3ATLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA%3ATLS_ECDHE_RSA_WITH_AES_256_CBC_SHA%3ATLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256%3ATLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&fm=%7B%22tcp%22%3A%20%5B%7B%22type%22%3A%20%22fragment%22%2C%20%22settings%22%3A%20%7B%22packets%22%3A%20%22tlshello%22%2C%20%22lengths%22%3A%20%5B%225%22%2C%20%2294%22%2C%20%221%22%5D%2C%20%22delays%22%3A%20%5B%220%22%5D%2C%20%22maxSplit%22%3A%20%220%22%7D%7D%2C%7B%22type%22%3A%20%22fragment%22%2C%20%22settings%22%3A%20%7B%22packets%22%3A%20%221-1%22%2C%20%22lengths%22%3A%20%5B%22109%22%2C%20%221%22%5D%2C%20%22delays%22%3A%20%5B%221%22%5D%2C%20%22maxSplit%22%3A%20%22355%22%7D%7D%5D%7D&headerType=none#%F0%9F%87%BA%F0%9F%87%B8%20%D0%A1%D0%A8%D0%90%20t.me%2Frjsxrd
 vless://1c332eae-7e02-4acd-996d-4eb3e652401c@144.31.50.236:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM&sid=bbe46bd8f6b96839&sni=yandex.ru#2206 | 🇷🇺 Russia | 🏳️ SNI-Yandex | VLESS | TG: @YoutubeUnBlockRu%20t.me%2Frjsxrd
-
 
 vless://2b781b4a-5942-48e0-a7f3-5a07b7b488c1@45.139.26.179:443?security=reality&encryption=none&pbk=AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI&type=grpc&serviceName=api&sni=ads.x5.ru&sid=15bcc0a77c3cacdf&fp=edge#[308ms Россия RU 🇷🇺 @vlesstrojan]%20t.me%2Frjsxrd
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.207:8080#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%40RaViraNet%20t.me%2Frjsxrd

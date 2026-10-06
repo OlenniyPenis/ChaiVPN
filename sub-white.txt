@@ -1,4 +1,4 @@
-profile-title: ☕ ChaiVPN-White
+#profile-title: ☕ ChaiVPN-White
 #profile-update-interval: 30
 
 

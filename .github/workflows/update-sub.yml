@@ -21,8 +21,8 @@ jobs:
 
       - name: Download and build subscriptions
         env:
-          BLACK_1: "https://warp-gen.cyb-portal.org/CP-003"
-          BLACK_2: "https://warp-gen.cyb-portal.org/CP-002"
+          BLACK_1: ""
+          BLACK_2: ""
 
           WHITE_1: "https://raw.githubusercontent.com/nwl1909/do/refs/heads/main/configibf"
           WHITE_2: "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-all.txt"

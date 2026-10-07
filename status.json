@@ -3,14 +3,14 @@
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ ВЕРНУЛСЯ! С НОВОЙ СИСТЕМОЙ И КОНФИГАМИ!",
-  "configs": 1140,
+  "configs": 1119,
   "black": {
     "source1": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — VLESS Black All RU",
       "configs": 140,
       "updated": "07.10.2026 01:37 MSK",
-      "checked": "2026-10-06T23:41:04Z",
+      "checked": "2026-10-07T00:15:53Z",
       "sha256": "06c30fa1d50163c12ba74a3a60cc10c8238593d32bc08799f5415e9e9ed62867"
     },
     "source2": {
@@ -18,7 +18,7 @@
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 150,
       "updated": "07.10.2026 01:37 MSK",
-      "checked": "2026-10-06T23:41:05Z",
+      "checked": "2026-10-07T00:16:15Z",
       "sha256": "e4e47ed618d349f165b8434c8725277a826eac39a40707023e34bf02b4b5336f"
     }
   },
@@ -28,16 +28,16 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 64,
       "updated": "—",
-      "checked": "2026-10-06T23:41:06Z",
+      "checked": "2026-10-07T00:16:16Z",
       "sha256": "e04eac81f3f212b034660e11075a2b158ce42dcfa4e4f96441d0e37ad62bc96d"
     },
     "source2": {
       "online": true,
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
-      "configs": 127,
+      "configs": 106,
       "updated": "—",
-      "checked": "2026-10-06T23:41:06Z",
-      "sha256": "b2eaa3b4c7240ba39cfd5267dafd5bccff1da431d7adc4940f52c1d65d44c0fd"
+      "checked": "2026-10-07T00:16:16Z",
+      "sha256": "9071d05dbc9a1fe83959d87c9f4cea6cf4f8ac55334a3b0a2a9e19215da7248b"
     }
   },
   "extra_white": {
@@ -46,7 +46,7 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 353,
       "updated": "02:40 07/10/2026",
-      "checked": "2026-10-06T23:41:06Z",
+      "checked": "2026-10-07T00:16:16Z",
       "sha256": "d65464e74fced0665917199b429f31eeb4f5cbb795ff12c6179c01733e4451b2"
     },
     "source2": {
@@ -54,9 +54,9 @@
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
       "updated": "02:39 07/10/2026",
-      "checked": "2026-10-06T23:41:06Z",
+      "checked": "2026-10-07T00:16:16Z",
       "sha256": "68a260f4fa50477c9eb035537d461b6fed6ddadaf7ad643925ac6751dc1aac50"
     }
   },
-  "updated": "2026-10-06T23:41:06Z"
+  "updated": "2026-10-07T00:16:16Z"
 }

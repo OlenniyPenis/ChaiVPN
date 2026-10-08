@@ -3,14 +3,14 @@
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ ВЕРНУЛСЯ! С НОВОЙ СИСТЕМОЙ И КОНФИГАМИ!",
-  "configs": 1210,
+  "configs": 1211,
   "black": {
     "source1": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 230,
       "updated": "08.10.2026 17:19 MSK",
-      "checked": "2026-10-08T18:12:26Z",
+      "checked": "2026-10-08T18:47:56Z",
       "sha256": "5293168061a358604b17d5bd179f4708132ef656980c9321692dcb79e3c9ed3f"
     },
     "source2": {
@@ -18,7 +18,7 @@
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 157,
       "updated": "08.10.2026 20:21 MSK",
-      "checked": "2026-10-08T18:12:34Z",
+      "checked": "2026-10-08T18:48:18Z",
       "sha256": "cd1b38537f4c02bf1d62e73aaa9ee6d1e75f76843de9a53ed4a3961e2b8a601c"
     }
   },
@@ -28,16 +28,16 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 51,
       "updated": "—",
-      "checked": "2026-10-08T18:12:35Z",
+      "checked": "2026-10-08T18:48:21Z",
       "sha256": "2892e9dce2e799f7e94e615b42d2aabda9a1390f75c32be53a21a416b6b11cbb"
     },
     "source2": {
       "online": true,
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
-      "configs": 131,
+      "configs": 132,
       "updated": "—",
-      "checked": "2026-10-08T18:12:35Z",
-      "sha256": "9283a26e39430ee45fae89edcbfebb8edd9ad05d7a474ddc634c6281aaed7b3f"
+      "checked": "2026-10-08T18:48:21Z",
+      "sha256": "f995c800dbd6b8e583f8b00dec9b209e8db527bf7e9d106f400459ea051a1c89"
     }
   },
   "extra_white": {
@@ -46,7 +46,7 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 335,
       "updated": "21:04 08/10/2026",
-      "checked": "2026-10-08T18:12:35Z",
+      "checked": "2026-10-08T18:48:21Z",
       "sha256": "dbafc26b09742d922a5d4104bc42c32b335b9b27fc3307056e493d35bb047a78"
     },
     "source2": {
@@ -54,9 +54,9 @@
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
       "updated": "20:50 08/10/2026",
-      "checked": "2026-10-08T18:12:35Z",
+      "checked": "2026-10-08T18:48:21Z",
       "sha256": "4529e2011ea39a2c1a3a7918581be897ab6bcfeb4b70985156f58f793aed2565"
     }
   },
-  "updated": "2026-10-08T18:12:36Z"
+  "updated": "2026-10-08T18:48:21Z"
 }

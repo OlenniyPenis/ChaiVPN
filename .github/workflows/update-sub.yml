@@ -21,11 +21,11 @@ jobs:
 
       - name: Download and build subscriptions
         env:
-          BLACK_1: ""
-          BLACK_2: ""
+          BLACK_1: "https://etoneya.su/other"
+          BLACK_2: "https://etoneya.best/other"
 
-          WHITE_1: "https://raw.githubusercontent.com/nwl1909/do/refs/heads/main/configibf"
-          WHITE_2: "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-all.txt"
+          WHITE_1: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
+          WHITE_2: "https://etoneya.su/whitelist"
 
           EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
           EXTRA_WHITE_2: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-1.txt"

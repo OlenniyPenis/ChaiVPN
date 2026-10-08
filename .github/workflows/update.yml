@@ -19,7 +19,7 @@ jobs:
 
       - name: Check sources and update status
         env:
-          BLACK_1: "https://etoneya.su/other"
+          BLACK_1: "https://warp-gen.cyb-portal.org/CP-034"
           BLACK_2: "https://warp-gen.cyb-portal.org/CP-003"
           WHITE_1: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
           WHITE_2: "https://etoneya.su/whitelist"

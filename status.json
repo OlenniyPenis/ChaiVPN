@@ -10,7 +10,7 @@
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 235,
       "updated": "09.10.2026 10:02 MSK",
-      "checked": "2026-10-09T11:11:13Z",
+      "checked": "2026-10-09T11:42:38Z",
       "sha256": "3463d243fe6727bc426e2b42a1a58c379a6f7ba8e9d55cbf2a7b6abf243ef684"
     },
     "source2": {
@@ -18,7 +18,7 @@
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 158,
       "updated": "09.10.2026 13:49 MSK",
-      "checked": "2026-10-09T11:11:42Z",
+      "checked": "2026-10-09T11:42:39Z",
       "sha256": "1456048ab4b96c0bd681fbb2c763dea714eac1bbd61ab589d09f81a8a0054adc"
     }
   },
@@ -28,7 +28,7 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 71,
       "updated": "—",
-      "checked": "2026-10-09T11:11:44Z",
+      "checked": "2026-10-09T11:42:40Z",
       "sha256": "dcef91a23bf99f4416be5a474c87373400c4728896cdd3c673ac762fad739d2e"
     },
     "source2": {
@@ -36,8 +36,8 @@
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
       "configs": 181,
       "updated": "—",
-      "checked": "2026-10-09T11:11:44Z",
-      "sha256": "43b861e6042b0df3d973618e54f9b09bdc34c003bd701ba662080021dc888648"
+      "checked": "2026-10-09T11:42:40Z",
+      "sha256": "48b9dbc6723fb810c3bee3f7ea2293941c59c2cc2b971838b3f60ab985b54b05"
     }
   },
   "extra_white": {
@@ -46,7 +46,7 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 445,
       "updated": "14:08 09/10/2026",
-      "checked": "2026-10-09T11:11:45Z",
+      "checked": "2026-10-09T11:42:40Z",
       "sha256": "da2628daf03b9c382624d7c90137966b7b3c248c32535c2ddb72c0b73cd73109"
     },
     "source2": {
@@ -54,9 +54,9 @@
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
       "updated": "13:34 09/10/2026",
-      "checked": "2026-10-09T11:11:45Z",
+      "checked": "2026-10-09T11:42:40Z",
       "sha256": "4d213e3e709715ba92f68947f283b248a2b3a6f4dc2c340e0f64052eee3fc680"
     }
   },
-  "updated": "2026-10-09T11:11:45Z"
+  "updated": "2026-10-09T11:42:40Z"
 }

@@ -1,24 +1,24 @@
 {
-  "online": true,
+  "online": false,
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ ВЕРНУЛСЯ! С НОВОЙ СИСТЕМОЙ И КОНФИГАМИ!",
   "configs": 1393,
   "black": {
     "source1": {
-      "online": true,
+      "online": false,
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 235,
       "updated": "09.10.2026 10:02 MSK",
-      "checked": "2026-10-09T12:13:17Z",
+      "checked": "2026-10-09T12:49:40Z",
       "sha256": "3463d243fe6727bc426e2b42a1a58c379a6f7ba8e9d55cbf2a7b6abf243ef684"
     },
     "source2": {
-      "online": true,
+      "online": false,
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 158,
       "updated": "09.10.2026 13:49 MSK",
-      "checked": "2026-10-09T12:13:18Z",
+      "checked": "2026-10-09T12:50:11Z",
       "sha256": "1456048ab4b96c0bd681fbb2c763dea714eac1bbd61ab589d09f81a8a0054adc"
     }
   },
@@ -28,7 +28,7 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 90,
       "updated": "—",
-      "checked": "2026-10-09T12:13:19Z",
+      "checked": "2026-10-09T12:50:41Z",
       "sha256": "7f9cea8f752a64ed536a25545293945b118297c41e05e052cb345ad2e6e1a10a"
     },
     "source2": {
@@ -36,7 +36,7 @@
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
       "configs": 181,
       "updated": "—",
-      "checked": "2026-10-09T12:13:19Z",
+      "checked": "2026-10-09T12:50:41Z",
       "sha256": "48b9dbc6723fb810c3bee3f7ea2293941c59c2cc2b971838b3f60ab985b54b05"
     }
   },
@@ -46,17 +46,17 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 423,
       "updated": "15:08 09/10/2026",
-      "checked": "2026-10-09T12:13:20Z",
+      "checked": "2026-10-09T12:50:42Z",
       "sha256": "bf7038293d21e6a3584bdfe1d0ef6d787543e495303459bf7e177e5902ea583b"
     },
     "source2": {
       "online": true,
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
-      "updated": "14:54 09/10/2026",
-      "checked": "2026-10-09T12:13:20Z",
-      "sha256": "e611bad7b5f5c294881cd0cd750388f1c8ee0ad50be7ee0c1e86dc3ee2b623db"
+      "updated": "15:35 09/10/2026",
+      "checked": "2026-10-09T12:50:42Z",
+      "sha256": "f6024340260deb32b4e59b9e71905785411821bf19f06e67fe8dad192d7af309"
     }
   },
-  "updated": "2026-10-09T12:13:20Z"
+  "updated": "2026-10-09T12:50:42Z"
 }

@@ -10,16 +10,16 @@
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 113,
       "updated": "13.10.2026 22:46 MSK",
-      "checked": "2026-10-13T22:19:24Z",
+      "checked": "2026-10-13T22:54:56Z",
       "sha256": "c463b79d3dac67de4e68cbc8d9065c97ce8993f7f1ad58d3330288783ebbc6ab"
     },
     "source2": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 155,
-      "updated": "13.10.2026 23:31 MSK",
-      "checked": "2026-10-13T22:19:27Z",
-      "sha256": "07cf764314f5b9d6b6c88baf7177c75c6b39db65d8160507f4600bcda86eb6b5"
+      "updated": "14.10.2026 01:16 MSK",
+      "checked": "2026-10-13T22:54:57Z",
+      "sha256": "4d5739ce73d7a36db69426c97469fbf1a8c93f23783cd857a326dd2a81044a59"
     }
   },
   "whitelist": {
@@ -28,7 +28,7 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 94,
       "updated": "—",
-      "checked": "2026-10-13T22:19:28Z",
+      "checked": "2026-10-13T22:55:00Z",
       "sha256": "bdeabdf4b7339699b9ca7dda25d16d0ce5faaf976b35a15250db5e9ae70904b1"
     },
     "source2": {
@@ -36,7 +36,7 @@
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
       "configs": 227,
       "updated": "—",
-      "checked": "2026-10-13T22:19:28Z",
+      "checked": "2026-10-13T22:55:00Z",
       "sha256": "f6bb9f2c0ae2ff24e6535c8bdd4f3c21222ff4664fa754add84ac8b71dff3ed5"
     }
   },
@@ -46,17 +46,17 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 1100,
       "updated": "01:12 14/10/2026",
-      "checked": "2026-10-13T22:19:28Z",
+      "checked": "2026-10-13T22:55:00Z",
       "sha256": "4af7e29f7aaf550449def1714388fcc6284281cdd12398e3b8d8649e0070edce"
     },
     "source2": {
       "online": true,
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
-      "updated": "00:49 14/10/2026",
-      "checked": "2026-10-13T22:19:28Z",
-      "sha256": "d052f8fb4ffe2de2363cbdfe756e57305f450bd74abc43d44f6f6498bcffab41"
+      "updated": "01:54 14/10/2026",
+      "checked": "2026-10-13T22:55:00Z",
+      "sha256": "e0879f5c73babc45c39bf3b0967a2b08f722f35da3ff224597e4ce257252a1bf"
     }
   },
-  "updated": "2026-10-13T22:19:28Z"
+  "updated": "2026-10-13T22:55:00Z"
 }

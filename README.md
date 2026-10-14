@@ -2,5 +2,5 @@
 
 Наш Сайт: https://olenniypenis.github.io/ChaiVPN/
 
-пссс ключ экстра вайт и блэк тута! на сайте нету)) 
-https://raw.githubusercontent.com/OlenniyPenis/ChaiVPN/refs/heads/main/sub-extra-black%2Bwhite
+пссс ключ тута! на сайте нету)) 
+https://raw.githubusercontent.com/OlenniyPenis/ChaiVPN/refs/heads/main/sub.txt

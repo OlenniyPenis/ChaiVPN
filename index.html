@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -15,16 +16,12 @@
 body {
   margin: 0;
   min-height: 100vh;
-
   font-family: Arial, sans-serif;
-
   background: #0b0d10;
   color: #f1f1f1;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 20px;
 }
 
@@ -35,14 +32,10 @@ body {
 
 .card {
   background: #15181d;
-
   border: 1px solid #292e36;
   border-radius: 20px;
-
   padding: 28px;
-
-  box-shadow:
-    0 15px 50px rgba(0,0,0,.35);
+  box-shadow: 0 15px 50px rgba(0,0,0,.35);
 }
 
 .header {
@@ -56,20 +49,15 @@ h1 {
 
 .subtitle {
   color: #9299a5;
-
   margin-top: 8px;
   margin-bottom: 25px;
 }
 
 .status {
   padding: 14px;
-
   border-radius: 12px;
-
   font-weight: bold;
-
   margin-bottom: 20px;
-
   text-align: center;
 }
 
@@ -85,137 +73,87 @@ h1 {
 
 .total {
   background: #1c2027;
-
   border-radius: 14px;
-
   padding: 20px;
-
   text-align: center;
-
   margin-bottom: 20px;
 }
 
 .total-label {
   color: #9299a5;
-
   font-size: 14px;
 }
 
 .total-value {
   font-size: 36px;
-
   font-weight: bold;
-
   margin-top: 6px;
 }
 
-
-/* =========================
-   ГРУППА
-   ========================= */
+/* GROUP */
 
 .group {
   background: #1c2027;
-
   border-radius: 16px;
-
   padding: 18px;
-
   margin-top: 15px;
 }
 
 .group-title {
   font-size: 20px;
-
   font-weight: bold;
-
   margin-bottom: 12px;
 }
 
-
-/* =========================
-   ИСТОЧНИК
-   ========================= */
+/* SOURCE */
 
 .source {
   background: #242932;
-
   border-radius: 12px;
-
   padding: 15px;
-
   margin-top: 10px;
 }
 
 .source-title {
   font-weight: bold;
-
   font-size: 16px;
 }
 
 .source-info {
   color: #9299a5;
-
   margin-top: 7px;
-
   font-size: 14px;
-
   line-height: 1.7;
 }
 
-
-/* =========================
-   КРАСНОЕ ПРЕДУПРЕЖДЕНИЕ
-   ========================= */
+/* WARNING */
 
 .warning {
   background: #2b1414;
-
   border: 1px solid #6b2929;
-
   border-radius: 12px;
-
   padding: 14px;
-
   margin-top: 12px;
-
   text-align: center;
-
   color: #ff5555;
-
   font-size: 14px;
-
   font-weight: bold;
-
   line-height: 1.5;
 }
 
-
-/* =========================
-   КНОПКА
-   ========================= */
+/* BUTTON */
 
 .button {
   display: block;
-
   text-align: center;
-
   text-decoration: none;
-
   background: #242932;
-
   color: white;
-
   padding: 15px;
-
   border-radius: 12px;
-
   margin-top: 12px;
-
   font-size: 16px;
-
   font-weight: bold;
-
   transition: background 0.2s ease;
 }
 
@@ -223,95 +161,58 @@ h1 {
   background: #303641;
 }
 
-
-/* =========================
-   FOOTER
-   ========================= */
+/* FOOTER */
 
 .footer {
   text-align: center;
-
   color: #626a76;
-
   margin-top: 20px;
-
   font-size: 13px;
 }
 
 .error {
   text-align: center;
-
   color: #ff7777;
-
   padding: 20px;
 }
 
 </style>
 </head>
 
-
 <body>
 
 <div class="container">
-
 <div class="card">
 
-
-<!-- =========================
-     HEADER
-     ========================= -->
+<!-- HEADER -->
 
 <div class="header">
+<h1>☕ ChaiVPN By Edicoral</h1>
 
-<h1>
-☕ ChaiVPN By Edicoral
-</h1>
-
-<div
-  class="subtitle"
-  id="description"
->
+<div class="subtitle" id="description">
 Загрузка...
 </div>
-
 </div>
 
+<!-- STATUS -->
 
-<!-- =========================
-     STATUS
-     ========================= -->
-
-<div
-  id="status"
-  class="status"
->
+<div id="status" class="status">
 Проверка состояния...
 </div>
 
-
-<!-- =========================
-     TOTAL
-     ========================= -->
+<!-- TOTAL -->
 
 <div class="total">
-
 <div class="total-label">
 ВСЕГО КОНФИГОВ
 </div>
 
-<div
-  class="total-value"
-  id="total"
->
+<div class="total-value" id="total">
 —
 </div>
-
 </div>
 
-
-<!-- =========================
-     BLACK
-     ========================= -->
+<!-- BLACK -->
 
 <div class="group">
 
@@ -319,52 +220,27 @@ h1 {
 ⚫ BLACK, Работает не стабильно!
 </div>
 
-
 <div class="source">
-
-<div class="source-title">
-Источник 1
-</div>
-
-<div
-  class="source-info"
-  id="black-source1"
->
+<div class="source-title">Источник 1</div>
+<div class="source-info" id="black-source1">
 Загрузка...
 </div>
-
 </div>
-
 
 <div class="source">
-
-<div class="source-title">
-Источник 2
-</div>
-
-<div
-  class="source-info"
-  id="black-source2"
->
+<div class="source-title">Источник 2</div>
+<div class="source-info" id="black-source2">
 Загрузка...
 </div>
-
 </div>
 
-
-<a
-  class="button"
-  href="sub-black.txt"
->
+<a class="button" href="sub-black.txt">
 ☕ Открыть Black
 </a>
 
 </div>
 
-
-<!-- =========================
-     WHITE-LIST
-     ========================= -->
+<!-- WHITE-LIST -->
 
 <div class="group">
 
@@ -372,52 +248,27 @@ h1 {
 ⚪ WHITE-LIST
 </div>
 
-
 <div class="source">
-
-<div class="source-title">
-Источник 1
-</div>
-
-<div
-  class="source-info"
-  id="white-source1"
->
+<div class="source-title">Источник 1</div>
+<div class="source-info" id="white-source1">
 Загрузка...
 </div>
-
 </div>
-
 
 <div class="source">
-
-<div class="source-title">
-Источник 2
-</div>
-
-<div
-  class="source-info"
-  id="white-source2"
->
+<div class="source-title">Источник 2</div>
+<div class="source-info" id="white-source2">
 Загрузка...
 </div>
-
 </div>
 
-
-<a
-  class="button"
-  href="sub-white.txt"
->
+<a class="button" href="sub-white.txt">
 🍵 ОТКРЫТЬ WHITE-LIST
 </a>
 
 </div>
 
-
-<!-- =========================
-     EXTRA-WHITE
-     ========================= -->
+<!-- EXTRA-WHITE -->
 
 <div class="group">
 
@@ -425,71 +276,58 @@ h1 {
 🔴 EXTRA-WHITE
 </div>
 
-
 <div class="source">
-
-<div class="source-title">
-Источник 1
-</div>
-
-<div
-  class="source-info"
-  id="extra-white-source1"
->
+<div class="source-title">Источник 1</div>
+<div class="source-info" id="extra-white-source1">
 Загрузка...
 </div>
-
 </div>
-
 
 <div class="source">
-
-<div class="source-title">
-Источник 2
-</div>
-
-<div
-  class="source-info"
-  id="extra-white-source2"
->
+<div class="source-title">Источник 2</div>
+<div class="source-info" id="extra-white-source2">
 Загрузка...
 </div>
-
 </div>
-
 
 <div class="warning">
 ⚠️ ВНИМАНИЕ! В EXTRA-WHITE ОЧЕНЬ МНОГО КОНФИГОВ.<br>
 БУДЬТЕ ОСТОРОЖНЫ ПРИ ИСПОЛЬЗОВАНИИ.
 </div>
 
-
-<a
-  class="button"
-  href="sub-extra-white.txt"
->
+<a class="button" href="sub-extra-white.txt">
 🔴 ОТКРЫТЬ EXTRA-WHITE
 </a>
 
 </div>
 
+<!-- CLOUDFLARE WARP -->
 
-<!-- =========================
-     FOOTER
-     ========================= -->
+<div class="group">
 
-<div
-  class="footer"
-  id="updated"
+<div class="group-title">
+☁️ CLOUDFLARE WARP
+</div>
+
+<a
+  class="button"
+  href="https://raw.githubusercontent.com/OlenniyPenis/ChaiVPN/refs/heads/main/sub.txt"
+  target="_blank"
+  rel="noopener noreferrer"
 >
+☁️ ОТКРЫТЬ CLOUDFLARE WARP
+</a>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer" id="updated">
 Последняя проверка: —
 </div>
 
-
 </div>
-
 </div>
-
 
 <script>
 
@@ -498,21 +336,14 @@ async function loadStatus() {
   try {
 
     const response = await fetch(
-      "status.json?cache=" +
-      Date.now()
+      "status.json?cache=" + Date.now()
     );
 
     if (!response.ok) {
-
-      throw new Error(
-        "status.json unavailable"
-      );
-
+      throw new Error("status.json unavailable");
     }
 
-    const data =
-      await response.json();
-
+    const data = await response.json();
 
     /*
      * DESCRIPTION
@@ -520,9 +351,7 @@ async function loadStatus() {
 
     document.getElementById(
       "description"
-    ).textContent =
-      data.description || "";
-
+    ).textContent = data.description || "";
 
     /*
      * TOTAL
@@ -530,95 +359,51 @@ async function loadStatus() {
 
     document.getElementById(
       "total"
-    ).textContent =
-      data.configs ?? "—";
-
+    ).textContent = data.configs ?? "—";
 
     /*
      * STATUS
      */
 
-    const status =
-      document.getElementById(
-        "status"
-      );
-
+    const status = document.getElementById("status");
 
     if (data.maintenance) {
 
-      status.className =
-        "status offline";
+      status.className = "status offline";
+      status.textContent = "🔴 ТЕХНИЧЕСКИЕ РАБОТЫ";
 
-      status.textContent =
-        "🔴 ТЕХНИЧЕСКИЕ РАБОТЫ";
+    } else if (data.online) {
 
-    }
+      status.className = "status online";
+      status.textContent = "🟢 СИСТЕМА РАБОТАЕТ";
 
-    else if (data.online) {
+    } else {
 
-      status.className =
-        "status online";
-
-      status.textContent =
-        "🟢 СИСТЕМА РАБОТАЕТ";
+      status.className = "status offline";
+      status.textContent = "🔴 ЕСТЬ ПРОБЛЕМЫ";
 
     }
-
-    else {
-
-      status.className =
-        "status offline";
-
-      status.textContent =
-        "🔴 ЕСТЬ ПРОБЛЕМЫ";
-
-    }
-
 
     /*
      * BLACK
      */
 
-    renderSource(
-      "black-source1",
-      data.black?.source1
-    );
-
-    renderSource(
-      "black-source2",
-      data.black?.source2
-    );
-
+    renderSource("black-source1", data.black?.source1);
+    renderSource("black-source2", data.black?.source2);
 
     /*
      * WHITE-LIST
      */
 
-    renderSource(
-      "white-source1",
-      data.whitelist?.source1
-    );
-
-    renderSource(
-      "white-source2",
-      data.whitelist?.source2
-    );
-
+    renderSource("white-source1", data.whitelist?.source1);
+    renderSource("white-source2", data.whitelist?.source2);
 
     /*
      * EXTRA-WHITE
      */
 
-    renderSource(
-      "extra-white-source1",
-      data.extra_white?.source1
-    );
-
-    renderSource(
-      "extra-white-source2",
-      data.extra_white?.source2
-    );
-
+    renderSource("extra-white-source1", data.extra_white?.source1);
+    renderSource("extra-white-source2", data.extra_white?.source2);
 
     /*
      * LAST CHECK
@@ -627,24 +412,14 @@ async function loadStatus() {
     document.getElementById(
       "updated"
     ).textContent =
-      "Последняя проверка: " +
-      (data.updated || "—");
+      "Последняя проверка: " + (data.updated || "—");
 
+  } catch (error) {
 
-  }
+    const status = document.getElementById("status");
 
-  catch (error) {
-
-    const status =
-      document.getElementById(
-        "status"
-      );
-
-    status.className =
-      "status offline";
-
-    status.textContent =
-      "🔴 НЕ УДАЛОСЬ ПОЛУЧИТЬ СТАТУС";
+    status.className = "status offline";
+    status.textContent = "🔴 НЕ УДАЛОСЬ ПОЛУЧИТЬ СТАТУС";
 
     console.error(error);
 
@@ -652,78 +427,39 @@ async function loadStatus() {
 
 }
 
-
 /*
  * SOURCE RENDER
  */
 
-function renderSource(
-  elementId,
-  source
-) {
+function renderSource(elementId, source) {
 
-  const element =
-    document.getElementById(
-      elementId
-    );
-
+  const element = document.getElementById(elementId);
 
   if (!source) {
-
-    element.innerHTML =
-      "🔴 Нет данных";
-
+    element.innerHTML = "🔴 Нет данных";
     return;
-
   }
 
+  const online = source.online === true;
 
-  const online =
-    source.online === true;
+  const status = online
+    ? "🟢 Источник работает"
+    : "🔴 Источник недоступен";
 
-
-  const status =
-    online
-      ? "🟢 Источник работает"
-      : "🔴 Источник недоступен";
-
-
-  const configs =
-    source.configs ??
-    "—";
-
-
-  const updated =
-    source.updated ||
-    "—";
-
-
-  const checked =
-    source.checked ||
-    "—";
-
+  const configs = source.configs ?? "—";
+  const updated = source.updated || "—";
+  const checked = source.checked || "—";
 
   element.innerHTML =
-
     status +
-
     "<br>" +
-
-    "📦 Конфигов: " +
-    configs +
-
+    "📦 Конфигов: " + configs +
     "<br>" +
-
-    "🕐 Обновление: " +
-    updated +
-
+    "🕐 Обновление: " + updated +
     "<br>" +
-
-    "🔎 Проверено: " +
-    checked;
+    "🔎 Проверено: " + checked;
 
 }
-
 
 /*
  * INITIAL LOAD
@@ -731,18 +467,12 @@ function renderSource(
 
 loadStatus();
 
-
 /*
  * AUTO REFRESH
- *
- * Проверяем status.json
- * каждые 60 секунд.
+ * Проверяем status.json каждые 60 секунд.
  */
 
-setInterval(
-  loadStatus,
-  60000
-);
+setInterval(loadStatus, 60000);
 
 </script>
 

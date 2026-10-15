@@ -8,7 +8,6 @@
 <title>ChaiVPN By Edicoral</title>
 
 <style>
-
 * {
   box-sizing: border-box;
 }
@@ -90,8 +89,6 @@ h1 {
   margin-top: 6px;
 }
 
-/* GROUP */
-
 .group {
   background: #1c2027;
   border-radius: 16px;
@@ -104,8 +101,6 @@ h1 {
   font-weight: bold;
   margin-bottom: 12px;
 }
-
-/* SOURCE */
 
 .source {
   background: #242932;
@@ -126,8 +121,6 @@ h1 {
   line-height: 1.7;
 }
 
-/* WARNING */
-
 .warning {
   background: #2b1414;
   border: 1px solid #6b2929;
@@ -135,13 +128,11 @@ h1 {
   padding: 14px;
   margin-top: 12px;
   text-align: center;
-  color: #ff5555;
+  color: #ff7777;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.5;
 }
-
-/* BUTTON */
 
 .button {
   display: block;
@@ -161,8 +152,6 @@ h1 {
   background: #303641;
 }
 
-/* FOOTER */
-
 .footer {
   text-align: center;
   color: #626a76;
@@ -174,6 +163,19 @@ h1 {
   text-align: center;
   color: #ff7777;
   padding: 20px;
+}
+
+/* CLOUDFLARE WARP STATUS */
+
+.warp-status {
+  background: #102417;
+  color: #6cff91;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 </style>
@@ -203,91 +205,65 @@ h1 {
 <!-- TOTAL -->
 
 <div class="total">
-<div class="total-label">
-ВСЕГО КОНФИГОВ
-</div>
-
-<div class="total-value" id="total">
-—
-</div>
+<div class="total-label">ВСЕГО КОНФИГОВ</div>
+<div class="total-value" id="total">—</div>
 </div>
 
 <!-- BLACK -->
 
 <div class="group">
-
 <div class="group-title">
 ⚫ BLACK, Работает не стабильно!
 </div>
 
 <div class="source">
 <div class="source-title">Источник 1</div>
-<div class="source-info" id="black-source1">
-Загрузка...
-</div>
+<div class="source-info" id="black-source1">Загрузка...</div>
 </div>
 
 <div class="source">
 <div class="source-title">Источник 2</div>
-<div class="source-info" id="black-source2">
-Загрузка...
-</div>
+<div class="source-info" id="black-source2">Загрузка...</div>
 </div>
 
 <a class="button" href="sub-black.txt">
 ☕ Открыть Black
 </a>
-
 </div>
 
 <!-- WHITE-LIST -->
 
 <div class="group">
-
-<div class="group-title">
-⚪ WHITE-LIST
-</div>
+<div class="group-title">⚪ WHITE-LIST</div>
 
 <div class="source">
 <div class="source-title">Источник 1</div>
-<div class="source-info" id="white-source1">
-Загрузка...
-</div>
+<div class="source-info" id="white-source1">Загрузка...</div>
 </div>
 
 <div class="source">
 <div class="source-title">Источник 2</div>
-<div class="source-info" id="white-source2">
-Загрузка...
-</div>
+<div class="source-info" id="white-source2">Загрузка...</div>
 </div>
 
 <a class="button" href="sub-white.txt">
 🍵 ОТКРЫТЬ WHITE-LIST
 </a>
-
 </div>
 
 <!-- EXTRA-WHITE -->
 
 <div class="group">
-
-<div class="group-title">
-🔴 EXTRA-WHITE
-</div>
+<div class="group-title">🔴 EXTRA-WHITE</div>
 
 <div class="source">
 <div class="source-title">Источник 1</div>
-<div class="source-info" id="extra-white-source1">
-Загрузка...
-</div>
+<div class="source-info" id="extra-white-source1">Загрузка...</div>
 </div>
 
 <div class="source">
 <div class="source-title">Источник 2</div>
-<div class="source-info" id="extra-white-source2">
-Загрузка...
-</div>
+<div class="source-info" id="extra-white-source2">Загрузка...</div>
 </div>
 
 <div class="warning">
@@ -298,15 +274,20 @@ h1 {
 <a class="button" href="sub-extra-white.txt">
 🔴 ОТКРЫТЬ EXTRA-WHITE
 </a>
-
 </div>
 
 <!-- CLOUDFLARE WARP -->
 
 <div class="group">
+<div class="group-title">☁️ CLOUDFLARE WARP</div>
 
-<div class="group-title">
-☁️ CLOUDFLARE WARP
+<div class="warp-status">
+🟢 Источник работает
+</div>
+
+<div class="warning">
+⚠️ ВНИМАНИЕ! CLOUDFLARE WARP ПОКА НАХОДИТСЯ В ТЕСТИРОВАНИИ.<br>
+Возможны нестабильная работа и перебои. Используйте данный способ умеренно, не полагаясь на него как на основной.
 </div>
 
 <a
@@ -317,7 +298,6 @@ h1 {
 >
 ☁️ ОТКРЫТЬ CLOUDFLARE WARP
 </a>
-
 </div>
 
 <!-- FOOTER -->
@@ -330,11 +310,8 @@ h1 {
 </div>
 
 <script>
-
 async function loadStatus() {
-
   try {
-
     const response = await fetch(
       "status.json?cache=" + Date.now()
     );
@@ -345,94 +322,48 @@ async function loadStatus() {
 
     const data = await response.json();
 
-    /*
-     * DESCRIPTION
-     */
+    document.getElementById("description").textContent =
+      data.description || "";
 
-    document.getElementById(
-      "description"
-    ).textContent = data.description || "";
-
-    /*
-     * TOTAL
-     */
-
-    document.getElementById(
-      "total"
-    ).textContent = data.configs ?? "—";
-
-    /*
-     * STATUS
-     */
+    document.getElementById("total").textContent =
+      data.configs ?? "—";
 
     const status = document.getElementById("status");
 
     if (data.maintenance) {
-
       status.className = "status offline";
       status.textContent = "🔴 ТЕХНИЧЕСКИЕ РАБОТЫ";
-
     } else if (data.online) {
-
       status.className = "status online";
       status.textContent = "🟢 СИСТЕМА РАБОТАЕТ";
-
     } else {
-
       status.className = "status offline";
       status.textContent = "🔴 ЕСТЬ ПРОБЛЕМЫ";
-
     }
-
-    /*
-     * BLACK
-     */
 
     renderSource("black-source1", data.black?.source1);
     renderSource("black-source2", data.black?.source2);
 
-    /*
-     * WHITE-LIST
-     */
-
     renderSource("white-source1", data.whitelist?.source1);
     renderSource("white-source2", data.whitelist?.source2);
-
-    /*
-     * EXTRA-WHITE
-     */
 
     renderSource("extra-white-source1", data.extra_white?.source1);
     renderSource("extra-white-source2", data.extra_white?.source2);
 
-    /*
-     * LAST CHECK
-     */
-
-    document.getElementById(
-      "updated"
-    ).textContent =
+    document.getElementById("updated").textContent =
       "Последняя проверка: " + (data.updated || "—");
 
   } catch (error) {
-
     const status = document.getElementById("status");
 
     status.className = "status offline";
     status.textContent = "🔴 НЕ УДАЛОСЬ ПОЛУЧИТЬ СТАТУС";
 
     console.error(error);
-
   }
-
 }
 
-/*
- * SOURCE RENDER
- */
-
 function renderSource(elementId, source) {
-
   const element = document.getElementById(elementId);
 
   if (!source) {
@@ -440,9 +371,7 @@ function renderSource(elementId, source) {
     return;
   }
 
-  const online = source.online === true;
-
-  const status = online
+  const status = source.online === true
     ? "🟢 Источник работает"
     : "🔴 Источник недоступен";
 
@@ -458,22 +387,11 @@ function renderSource(elementId, source) {
     "🕐 Обновление: " + updated +
     "<br>" +
     "🔎 Проверено: " + checked;
-
 }
-
-/*
- * INITIAL LOAD
- */
 
 loadStatus();
 
-/*
- * AUTO REFRESH
- * Проверяем status.json каждые 60 секунд.
- */
-
 setInterval(loadStatus, 60000);
-
 </script>
 
 </body>

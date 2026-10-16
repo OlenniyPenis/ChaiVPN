@@ -3,14 +3,14 @@
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ ВЕРНУЛСЯ! С НОВОЙ СИСТЕМОЙ И КОНФИГАМИ!",
-  "configs": 1804,
+  "configs": 1830,
   "black": {
     "source1": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 117,
       "updated": "16.10.2026 05:17 MSK",
-      "checked": "2026-10-16T06:29:16Z",
+      "checked": "2026-10-16T07:14:54Z",
       "sha256": "7adb18f1a9da79b8e5630796d5fd6bc7bd42947769b65c41fc775295ff51ca42"
     },
     "source2": {
@@ -18,7 +18,7 @@
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 149,
       "updated": "16.10.2026 08:32 MSK",
-      "checked": "2026-10-16T06:29:17Z",
+      "checked": "2026-10-16T07:14:55Z",
       "sha256": "aa7b124e50ab5d9b6df4281758bc23cc8f1557c33d3e70c33c70db3f97623362"
     }
   },
@@ -26,17 +26,17 @@
     "source1": {
       "online": true,
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
-      "configs": 166,
+      "configs": 176,
       "updated": "—",
-      "checked": "2026-10-16T06:29:18Z",
-      "sha256": "746789aa7ae54daac5b5f17ff629d4e58a2f4cbc3dd64967873055b4bca37b71"
+      "checked": "2026-10-16T07:14:55Z",
+      "sha256": "559583a6685153d3c6e703f3e1d5a08dfea029db57dac81760304a3fa8bbc0ac"
     },
     "source2": {
       "online": true,
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
       "configs": 102,
       "updated": "—",
-      "checked": "2026-10-16T06:29:18Z",
+      "checked": "2026-10-16T07:14:55Z",
       "sha256": "f90bb24861f94e438fea72baf693cd7bb63391b4c78717502472763e5585490c"
     }
   },
@@ -44,19 +44,19 @@
     "source1": {
       "online": true,
       "title": "bypass-all t.me/rjsxrd",
-      "configs": 964,
-      "updated": "08:48 16/10/2026",
-      "checked": "2026-10-16T06:29:18Z",
-      "sha256": "5ccb84756a169fac26470de12a0be01b165639f8ac8e02ae6fdfcc3ec77ab562"
+      "configs": 980,
+      "updated": "09:51 16/10/2026",
+      "checked": "2026-10-16T07:14:56Z",
+      "sha256": "46cc56d445b8e90353b1952718a49b665c9c2e247c97a071e972f91f3eb52835"
     },
     "source2": {
       "online": true,
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
-      "updated": "08:29 16/10/2026",
-      "checked": "2026-10-16T06:29:18Z",
-      "sha256": "949908c759dc150ec24e75f249032469ce4be6e80f106185b9fbe6ae646ca8e8"
+      "updated": "09:32 16/10/2026",
+      "checked": "2026-10-16T07:14:56Z",
+      "sha256": "4364df2084e640a9d98832149c3466b85b3f8dbf32c712f982714e9ba964c1dc"
     }
   },
-  "updated": "2026-10-16T06:29:18Z"
+  "updated": "2026-10-16T07:14:56Z"
 }

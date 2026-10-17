@@ -21,7 +21,7 @@ ChaiVPN — проект, который объединяет источники
 
 ![Сайт ChaiVPN](screenshots/website.png)
 
-### 📱 Подписки в Happ и ZedSecure
+### 📱 Подписки в Happ,ZedSecure и V2rayng
 
 ![Подписки ChaiVPN в Happ](screenshots/happ.png)
 ![Подписки ChaiVPN в ZedSecure](screenshots/zed.png)

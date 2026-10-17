@@ -22,11 +22,11 @@ ChaiVPN — проект, который объединяет источники
 ![Сайт ChaiVPN](screenshots/website.png)
 
 ### 📱 Подписки в Happ,ZedSecure и V2rayng
-
-![Подписки ChaiVPN в Happ](screenshots/happ.jpg)
-![Подписки ChaiVPN в ZedSecure](screenshots/zed.jpg)
-![Подписки ChaiVPN в V2rayng](screenshots/v2.jpg)
-
+<p align="center">
+  <img src="screenshots/happ.jpg" width="250">
+  <img src="screenshots/v2.jpg" width="250">
+  <img src="screenshots/zed.jpg" width="250">
+</p>
 ## 📂 Структура проекта
 
 | Файл | Описание |

@@ -65,6 +65,7 @@ jobs:
           {
             echo "#profile-title: ☕ ChaiVPN-Black"
             echo "#profile-update-interval: 30"
+            echo "#announce: Источник может работать не стабильно! GitHub Обновляет ключ сам, вам необходимо просто нажимать на значок обновления ключа чтоб подгрузились другие конфиги"
             echo
 
             cat black1.txt
@@ -105,6 +106,7 @@ jobs:
           {
             echo "#profile-title: ☕ ChaiVPN-White"
             echo "#profile-update-interval: 30"
+            echo "#announce: Источник может работать не стабильно! GitHub Обновляет ключ сам, вам необходимо просто нажимать на значок обновления ключа чтоб подгрузились другие конфиги"
             echo
 
             cat white1.txt
@@ -145,6 +147,7 @@ jobs:
           {
             echo "#profile-title: ☕ ChaiVPN-Extra-White"
             echo "#profile-update-interval: 30"
+            echo "#announce: Источник может работать не стабильно! GitHub Обновляет ключ сам, вам необходимо просто нажимать на значок обновления ключа чтоб подгрузились другие конфиги"
             echo
 
             cat extra-white1.txt

@@ -10,7 +10,7 @@
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 105,
       "updated": "17.10.2026 05:02 MSK",
-      "checked": "2026-10-17T03:23:26Z",
+      "checked": "2026-10-17T03:57:25Z",
       "sha256": "61635bccfa34f2c32e6af6041b652c8c3a6e5e67e3636c936755e03e1d24a250"
     },
     "source2": {
@@ -18,7 +18,7 @@
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 152,
       "updated": "17.10.2026 05:47 MSK",
-      "checked": "2026-10-17T03:23:27Z",
+      "checked": "2026-10-17T03:57:26Z",
       "sha256": "2c7b4767d282755dc24de672c0eb4c1675f20a884985342e140cfce5777ccda4"
     }
   },
@@ -28,7 +28,7 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 211,
       "updated": "—",
-      "checked": "2026-10-17T03:23:28Z",
+      "checked": "2026-10-17T03:57:27Z",
       "sha256": "f89bfd21e5bda3d3a7045268c36796a8b2361eb2515f0e2668f46df2fc55c862"
     },
     "source2": {
@@ -36,7 +36,7 @@
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
       "configs": 226,
       "updated": "—",
-      "checked": "2026-10-17T03:23:28Z",
+      "checked": "2026-10-17T03:57:27Z",
       "sha256": "89ff0e62c43fe4415f9c9ebcce45e72173ea4c327621d004ecc05681231c6cb8"
     }
   },
@@ -46,17 +46,17 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 1643,
       "updated": "06:04 17/10/2026",
-      "checked": "2026-10-17T03:23:29Z",
+      "checked": "2026-10-17T03:57:28Z",
       "sha256": "6d8ae6f690ea8f21e8e0133915cb3eb2c5a6dfd9d4b7da3f929c8e37dfc0e150"
     },
     "source2": {
       "online": true,
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
-      "updated": "05:36 17/10/2026",
-      "checked": "2026-10-17T03:23:29Z",
-      "sha256": "e8e4de8c10acecec2ce7790fc2e8221d4cf2eff597f8314014824a3c973e1c03"
+      "updated": "06:46 17/10/2026",
+      "checked": "2026-10-17T03:57:28Z",
+      "sha256": "920e5e5e08ad4469e894a5e07659600f24f434a62185e7c57ea08712d2ea69da"
     }
   },
-  "updated": "2026-10-17T03:23:29Z"
+  "updated": "2026-10-17T03:57:28Z"
 }

@@ -27,7 +27,7 @@ ChaiVPN — проект, который объединяет источники
   <img src="screenshots/v2.jpg" width="250">
   <img src="screenshots/zed.jpg" width="250">
 </p>
-### 📂 Структура проекта
+📂 Структура проекта
 
 | Файл | Описание |
 |---|---|

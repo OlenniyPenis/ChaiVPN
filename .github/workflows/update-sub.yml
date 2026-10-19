@@ -25,7 +25,7 @@ jobs:
           BLACK_2: "https://warp-gen.cyb-portal.org/CP-003"
 
           WHITE_1: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
-          WHITE_2: "https://etoneya.su/whitelist"
+          WHITE_2: "https://raw.githubusercontent.com/ImSketch1337/vless-/refs/heads/main/BLWLservers.txt"
 
           EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
           EXTRA_WHITE_2: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-1.txt"

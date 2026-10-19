@@ -3,14 +3,14 @@
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ ВЕРНУЛСЯ! С НОВОЙ СИСТЕМОЙ И КОНФИГАМИ!",
-  "configs": 1774,
+  "configs": 1790,
   "black": {
     "source1": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 167,
       "updated": "19.10.2026 20:18 MSK",
-      "checked": "2026-10-19T17:56:03Z",
+      "checked": "2026-10-19T18:26:05Z",
       "sha256": "b467d068c1b72021161ef08763a84ad95699a1d11361efa7d8d39dbe2e3b07ec"
     },
     "source2": {
@@ -18,7 +18,7 @@
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 150,
       "updated": "19.10.2026 20:48 MSK",
-      "checked": "2026-10-19T17:56:04Z",
+      "checked": "2026-10-19T18:26:06Z",
       "sha256": "d535e76ae239fc6e83b4d000408ef2c3a47e65133a2ccbff545ecc0c6e458d1b"
     }
   },
@@ -26,17 +26,17 @@
     "source1": {
       "online": true,
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
-      "configs": 77,
+      "configs": 93,
       "updated": "—",
-      "checked": "2026-10-19T17:56:05Z",
-      "sha256": "e8384dcb832c2ee795ebeaa569e8fe964b71ac1e4e2743ddf137c52ad626afe2"
+      "checked": "2026-10-19T18:26:07Z",
+      "sha256": "8deeb98e9b723ac04ba0dffd94ce1339b831f5eadc8ab8ce2e6f56a43555d9bd"
     },
     "source2": {
       "online": true,
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
       "configs": 226,
       "updated": "—",
-      "checked": "2026-10-19T17:56:05Z",
+      "checked": "2026-10-19T18:26:07Z",
       "sha256": "3111081b5519c0867c8b62ffb8c5ebfb69b79bf07ee6bb91492326725842e985"
     }
   },
@@ -46,7 +46,7 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 848,
       "updated": "20:18 19/10/2026",
-      "checked": "2026-10-19T17:56:05Z",
+      "checked": "2026-10-19T18:26:07Z",
       "sha256": "b2acf40651b65d16751f3a4c8f550411f5fe671f44c6c0a55d36360791072219"
     },
     "source2": {
@@ -54,9 +54,9 @@
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
       "updated": "20:53 19/10/2026",
-      "checked": "2026-10-19T17:56:05Z",
+      "checked": "2026-10-19T18:26:07Z",
       "sha256": "2d09aa71a4fce82153584faa98067249cf55b50cd17c55fa70070debcfa64672"
     }
   },
-  "updated": "2026-10-19T17:56:05Z"
+  "updated": "2026-10-19T18:26:07Z"
 }

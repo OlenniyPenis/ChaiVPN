@@ -10,16 +10,16 @@
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 164,
       "updated": "20.10.2026 13:48 MSK",
-      "checked": "2026-10-20T11:23:06Z",
+      "checked": "2026-10-20T11:58:26Z",
       "sha256": "73d1993da5628fd9b678026532711e5839390cef00c44e1577678681ccabe874"
     },
     "source2": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — VLESS Black Mobile RU",
       "configs": 158,
-      "updated": "20.10.2026 13:03 MSK",
-      "checked": "2026-10-20T11:23:07Z",
-      "sha256": "f75e4a56917b409cf4d5e31d33473786f4aedd380c65c23b46fce1d861c8bdfa"
+      "updated": "20.10.2026 14:33 MSK",
+      "checked": "2026-10-20T11:58:27Z",
+      "sha256": "2f5faa8d5355e820e6f565acafe92128049bdac3f9fd733a0680ee14117b03d3"
     }
   },
   "whitelist": {
@@ -28,7 +28,7 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 75,
       "updated": "—",
-      "checked": "2026-10-20T11:23:08Z",
+      "checked": "2026-10-20T11:58:29Z",
       "sha256": "8e33206ed694487d5744cd89c9e4b124079321b43467f045396038addaf57b6b"
     },
     "source2": {
@@ -36,7 +36,7 @@
       "title": "🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full",
       "configs": 226,
       "updated": "—",
-      "checked": "2026-10-20T11:23:09Z",
+      "checked": "2026-10-20T11:58:29Z",
       "sha256": "3111081b5519c0867c8b62ffb8c5ebfb69b79bf07ee6bb91492326725842e985"
     }
   },
@@ -46,7 +46,7 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 1276,
       "updated": "14:13 20/10/2026",
-      "checked": "2026-10-20T11:23:09Z",
+      "checked": "2026-10-20T11:58:29Z",
       "sha256": "cb5efd0667f710c2859cea851364c264ceefd48cc44f3b5adad1c8f8129a9af7"
     },
     "source2": {
@@ -54,9 +54,9 @@
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 306,
       "updated": "14:20 20/10/2026",
-      "checked": "2026-10-20T11:23:09Z",
+      "checked": "2026-10-20T11:58:29Z",
       "sha256": "0493cacf7959efab8acb58c7a739a262c657ac8f277eb7e9855dc9b0e9dd9488"
     }
   },
-  "updated": "2026-10-20T11:23:09Z"
+  "updated": "2026-10-20T11:58:29Z"
 }

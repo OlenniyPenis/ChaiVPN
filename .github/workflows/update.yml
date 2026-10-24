@@ -24,7 +24,7 @@ jobs:
           WHITE_1: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
           WHITE_2: "https://raw.githubusercontent.com/nwl1909/do/refs/heads/main/configibf"
           EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
-          EXTRA_WHITE_2: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-1.txt"
+          EXTRA_WHITE_2: "https://raw.githubusercontent.com/OlenniyPenis/ChaiVPN/refs/heads/main/Sub-Lte.txt"
 
         run: |
 

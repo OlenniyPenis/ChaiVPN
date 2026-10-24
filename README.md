@@ -36,6 +36,7 @@ ChaiVPN — проект, который объединяет источники
 | `sub-black.txt` | Подписка BLACK |
 | `sub-white.txt` | Подписка WHITE |
 | `sub-extra-white.txt` | Подписка EXTRA-WHITE |
+| `sub-lte.txt` | Дополнительная подписка для обхода БС будет в внутри Extra-White!|
 | `.github/workflows/` | Сценарии автоматического обновления |
 
 ## 🔄 Автоматическое обновление

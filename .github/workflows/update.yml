@@ -22,7 +22,7 @@ jobs:
           BLACK_1: "https://warp-gen.cyb-portal.org/CP-034"
           BLACK_2: "https://warp-gen.cyb-portal.org/CP-003"
           WHITE_1: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
-          WHITE_2: "https://raw.githubusercontent.com/ImSketch1337/vless-/refs/heads/main/BLWLservers.txt"
+          WHITE_2: "https://raw.githubusercontent.com/nwl1909/do/refs/heads/main/configibf"
           EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
           EXTRA_WHITE_2: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-1.txt"
 

@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -136,15 +136,18 @@ h1 {
 
 .button {
   display: block;
+  width: 100%;
   text-align: center;
   text-decoration: none;
   background: #242932;
   color: white;
   padding: 15px;
+  border: none;
   border-radius: 12px;
   margin-top: 12px;
   font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
   transition: background 0.2s ease;
 }
 
@@ -157,6 +160,84 @@ h1 {
   color: #626a76;
   margin-top: 20px;
   font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer:hover {
+  color: #9299a5;
+}
+
+/* SECRET PANEL */
+
+.secret-panel {
+  display: none;
+  background: #1c2027;
+  border: 1px solid #292e36;
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 14px;
+}
+
+.secret-panel.visible {
+  display: block;
+}
+
+.secret-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.secret-description {
+  text-align: center;
+  color: #9299a5;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.secret-input {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #363d48;
+  background: #0b0d10;
+  color: #f1f1f1;
+  font-size: 16px;
+  outline: none;
+}
+
+.secret-input:focus {
+  border-color: #6cff91;
+}
+
+.secret-message {
+  display: none;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.secret-message.error {
+  display: block;
+  color: #ff7777;
+}
+
+.secret-message.success {
+  display: block;
+  color: #6cff91;
+}
+
+.secret-open {
+  display: none;
+}
+
+.secret-open.visible {
+  display: block;
 }
 
 .error {
@@ -212,9 +293,7 @@ h1 {
 <!-- BLACK -->
 
 <div class="group">
-<div class="group-title">
-⚫ BLACK
-</div>
+<div class="group-title">⚫ BLACK</div>
 
 <div class="source">
 <div class="source-title">Источник 1</div>
@@ -286,9 +365,9 @@ h1 {
 </div>
 
 <div class="warning">
-⚠️ ВНИМАНИЕ! Читайте инструкцию на сайте генератора!.<br>
-Рекомендуемые клиенты: AmneziaVPN, AmneziaWG, ZedSecure
-Советую попробовать ZedSecure
+⚠️ ВНИМАНИЕ! Читайте инструкцию на сайте генератора!<br>
+Рекомендуемые клиенты: AmneziaVPN, AmneziaWG, ZedSecure.<br>
+Советую попробовать ZedSecure.
 </div>
 
 <a
@@ -303,14 +382,141 @@ h1 {
 
 <!-- FOOTER -->
 
-<div class="footer" id="updated">
+<div
+  class="footer"
+  id="updated"
+  role="button"
+  tabindex="0"
+  aria-expanded="false"
+  title="Нажмите, чтобы открыть секретный раздел"
+>
 Последняя проверка: —
+</div>
+
+<!-- SECRET -->
+
+<div class="secret-panel" id="secret-panel">
+
+  <div class="secret-title">🔐 Secret Access</div>
+
+  <div class="secret-description">
+    Введите код доступа, чтобы открыть секретный раздел.
+  </div>
+
+  <form id="secret-form">
+    <input
+      class="secret-input"
+      id="secret-password"
+      type="password"
+      placeholder="Введите код доступа"
+      autocomplete="off"
+      inputmode="numeric"
+      aria-label="Код доступа"
+      required
+    >
+
+    <button class="button" type="submit">
+      Проверить код
+    </button>
+  </form>
+
+  <div
+    class="secret-message"
+    id="secret-message"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+  <button
+    class="button secret-open"
+    id="secret-open"
+    type="button"
+  >
+    🔐 Open Secret
+  </button>
+
 </div>
 
 </div>
 </div>
 
 <script>
+/* SECRET SETTINGS */
+
+// Код доступа к скрытому разделу
+const SECRET_PASSWORD = "5151";
+
+// ВСТАВЬ СВОЮ ССЫЛКУ ВМЕСТО ЭТОГО АДРЕСА
+const SECRET_URL = "https://raw.githubusercontent.com/OlenniyPenis/ChaiVPN/refs/heads/main/screenshots/secretsub.txt";
+
+const updatedElement = document.getElementById("updated");
+const secretPanel = document.getElementById("secret-panel");
+const secretForm = document.getElementById("secret-form");
+const secretPassword = document.getElementById("secret-password");
+const secretMessage = document.getElementById("secret-message");
+const secretOpen = document.getElementById("secret-open");
+
+function toggleSecretPanel() {
+  const isVisible = secretPanel.classList.toggle("visible");
+
+  updatedElement.setAttribute("aria-expanded", String(isVisible));
+
+  if (isVisible) {
+    secretPassword.focus();
+  } else {
+    secretPassword.value = "";
+    secretMessage.className = "secret-message";
+    secretMessage.textContent = "";
+    secretOpen.classList.remove("visible");
+  }
+}
+
+updatedElement.addEventListener("click", toggleSecretPanel);
+
+updatedElement.addEventListener("keydown", function(event) {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    toggleSecretPanel();
+  }
+});
+
+secretForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const enteredPassword = secretPassword.value;
+
+  if (enteredPassword === SECRET_PASSWORD) {
+    secretMessage.className = "secret-message success";
+    secretMessage.textContent = "✅ Код верный. Доступ разрешён.";
+
+    secretOpen.classList.add("visible");
+    secretPassword.value = "";
+  } else {
+    secretMessage.className = "secret-message error";
+    secretMessage.textContent = "❌ Неверный код. Попробуйте ещё раз.";
+
+    secretOpen.classList.remove("visible");
+    secretPassword.value = "";
+    secretPassword.focus();
+  }
+});
+
+secretOpen.addEventListener("click", function() {
+  if (
+    SECRET_URL === "PASTE_YOUR_SECRET_LINK_HERE" ||
+    !/^https?:\/\//i.test(SECRET_URL)
+  ) {
+    secretMessage.className = "secret-message error";
+    secretMessage.textContent =
+      "⚠️ Сначала укажите ссылку в настройках SECRET_URL в index.html.";
+    return;
+  }
+
+  window.open(SECRET_URL, "_blank", "noopener,noreferrer");
+});
+
+/* STATUS */
+
 async function loadStatus() {
   try {
     const response = await fetch(
@@ -351,7 +557,7 @@ async function loadStatus() {
     renderSource("extra-white-source1", data.extra_white?.source1);
     renderSource("extra-white-source2", data.extra_white?.source2);
 
-    document.getElementById("updated").textContent =
+    updatedElement.textContent =
       "Последняя проверка: " + (data.updated || "—");
 
   } catch (error) {
@@ -368,7 +574,7 @@ function renderSource(elementId, source) {
   const element = document.getElementById(elementId);
 
   if (!source) {
-    element.innerHTML = "🔴 Нет данных";
+    element.textContent = "🔴 Нет данных";
     return;
   }
 
@@ -397,3 +603,4 @@ setInterval(loadStatus, 60000);
 
 </body>
 </html>
+```

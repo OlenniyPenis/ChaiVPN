@@ -22,7 +22,7 @@ jobs:
       - name: Download and build subscriptions
         env:
           BLACK_1: "https://warp-gen.cyb-portal.org/CP-034"
-          BLACK_2: "https://warp-gen.cyb-portal.org/CP-003"
+          BLACK_2: "https://raw.githubusercontent.com/OlenniyPenis/ChaiVPN/refs/heads/main/Subblack.txt"
 
           WHITE_1: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
           WHITE_2: "https://raw.githubusercontent.com/nwl1909/do/refs/heads/main/configibf"

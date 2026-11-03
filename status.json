@@ -3,23 +3,23 @@
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ СНОВА ЗАВАРЕН! Новый этап начинается!",
-  "configs": 1265,
+  "configs": 1262,
   "black": {
     "source1": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 355,
       "updated": "03.11.2026 21:14 MSK",
-      "checked": "2026-11-03T22:14:56Z",
+      "checked": "2026-11-03T22:34:22Z",
       "sha256": "c40a0ff4504e6165cc85735c262482b07078f232fd5cc5a0500a2aed4e2c3626"
     },
     "source2": {
       "online": true,
       "title": "PizdukVPN ЧС🏴",
-      "configs": 111,
+      "configs": 108,
       "updated": "26.10.2026 11:09 MSK",
-      "checked": "2026-11-03T22:14:57Z",
-      "sha256": "a0475309f5189fdf06b4fe5121fce4526bd8a2ec508706a8cfa7755c7b522eaa"
+      "checked": "2026-11-03T22:34:23Z",
+      "sha256": "71ca1c3bdc96fa92d14b85b85d58b84c6f643a1adf27ffb7634eb32ca7296318"
     }
   },
   "whitelist": {
@@ -28,7 +28,7 @@
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
       "configs": 86,
       "updated": "—",
-      "checked": "2026-11-03T22:14:58Z",
+      "checked": "2026-11-03T22:34:24Z",
       "sha256": "96e007ed912c896aecaef7986917ff06fcff2b407e3034c79270611f48aee568"
     },
     "source2": {
@@ -36,7 +36,7 @@
       "title": "PizdukVPN БС🏳",
       "configs": 29,
       "updated": "—",
-      "checked": "2026-11-03T22:14:58Z",
+      "checked": "2026-11-03T22:34:24Z",
       "sha256": "942731cc6027ad6a72b4e389bf6a67acb2867ef2c3a97a26301d9a3ed78daecc"
     }
   },
@@ -46,7 +46,7 @@
       "title": "bypass-all t.me/rjsxrd",
       "configs": 683,
       "updated": "00:22 04/11/2026",
-      "checked": "2026-11-03T22:14:59Z",
+      "checked": "2026-11-03T22:34:25Z",
       "sha256": "2bc10ca9cc67ee197ad092f7d4ef2fbe7ca029dba030a1d6d26904b1c1ce3f7e"
     },
     "source2": {
@@ -54,9 +54,9 @@
       "title": "bypass-1.txt t.me/rjsxrd",
       "configs": 1,
       "updated": "08:08 24/10/2026",
-      "checked": "2026-11-03T22:14:59Z",
+      "checked": "2026-11-03T22:34:25Z",
       "sha256": "5092082fb6daa42f8ab1db218d854da71e887f36995d4a4cc4330c910b21983a"
     }
   },
-  "updated": "2026-11-03T22:14:59Z"
+  "updated": "2026-11-03T22:34:25Z"
 }

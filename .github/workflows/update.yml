@@ -411,7 +411,7 @@ jobs:
                   online,
 
               "maintenance":
-                  False,
+                  True,
 
               "title":
                   "ChaiVPN by Edicoral",

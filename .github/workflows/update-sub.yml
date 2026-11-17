@@ -21,7 +21,7 @@ jobs:
 
       - name: Download and build subscriptions
         env:
-          BLACK_1: "https://gitverse.ru/api/repos/europe_vpn/vpn_sub/raw/branch/master/config.txt"
+          BLACK_1: "https://raw.githubusercontent.com/PizdukMod/PizdukVPN/refs/heads/main/sub"
           BLACK_2: "https://hub.mos.ru/akelladejavu/bunker/-/raw/main/BLWL_MIX.txt"
 
           WHITE_1: "https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/ru_configs.txt"

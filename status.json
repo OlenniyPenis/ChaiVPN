@@ -3,22 +3,22 @@
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ СНОВА ЗАВАРЕН! Новый этап начинается!",
-  "configs": 580,
+  "configs": 663,
   "black": {
     "source1": {
       "online": true,
       "title": "PizdukVPN ЧС❄️",
-      "configs": 32,
+      "configs": 27,
       "updated": "06.11.2026 06:16 MSK",
-      "checked": "2026-11-17T14:56:38Z",
-      "sha256": "00c249439010c9f44e72af5ebece66c0395b94c20046e938599a1d9b0f1fdbd2"
+      "checked": "2026-11-17T18:09:10Z",
+      "sha256": "9a8331e72a0760252b94142235cdc3e3098646c5e397f16ed9403b7134a0bf9e"
     },
     "source2": {
       "online": true,
       "title": "Бункер МИКС ⚡",
       "configs": 131,
       "updated": "26.10.2026 11:09 MSK",
-      "checked": "2026-11-17T14:56:39Z",
+      "checked": "2026-11-17T18:09:10Z",
       "sha256": "614b151c0d60d654a48da88b69f39d1a1c70cf5d424e8a0637a8732b16ad336e"
     }
   },
@@ -26,17 +26,17 @@
     "source1": {
       "online": true,
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
-      "configs": 110,
+      "configs": 101,
       "updated": "—",
-      "checked": "2026-11-17T14:56:40Z",
-      "sha256": "5dace6a770d71d34b8ac9c758d9bdad717dbf1f340ac72de2fc0539df51b522e"
+      "checked": "2026-11-17T18:09:11Z",
+      "sha256": "32b480d37102fb0f494319ddaf15744002f1375cebf612b904ac01f6441ff27c"
     },
     "source2": {
       "online": true,
       "title": "Бункер БС 🤍",
       "configs": 21,
       "updated": "—",
-      "checked": "2026-11-17T14:56:40Z",
+      "checked": "2026-11-17T18:09:11Z",
       "sha256": "9e8ab670d141610f2deeaa36fda43734ac6293c684cd65be354e668d7a3bb504"
     }
   },
@@ -44,19 +44,19 @@
     "source1": {
       "online": true,
       "title": "bypass-all t.me/rjsxrd",
-      "configs": 176,
-      "updated": "17:00 17/11/2026",
-      "checked": "2026-11-17T14:56:41Z",
-      "sha256": "838cc3ab81626d6e2300db6ea94a1d2f84890245966699b616a35063e2328891"
+      "configs": 282,
+      "updated": "20:59 17/11/2026",
+      "checked": "2026-11-17T18:09:11Z",
+      "sha256": "207814147a5bd30d6b547a366ffc49f4e010bc0fce7f0c9ab31562a0a2cdad4c"
     },
     "source2": {
       "online": true,
       "title": "bypass-1.txt t.me/rjsxrd",
-      "configs": 110,
+      "configs": 101,
       "updated": "08:08 24/10/2026",
-      "checked": "2026-11-17T14:56:41Z",
-      "sha256": "5dace6a770d71d34b8ac9c758d9bdad717dbf1f340ac72de2fc0539df51b522e"
+      "checked": "2026-11-17T18:09:12Z",
+      "sha256": "32b480d37102fb0f494319ddaf15744002f1375cebf612b904ac01f6441ff27c"
     }
   },
-  "updated": "2026-11-17T14:56:41Z"
+  "updated": "2026-11-17T18:09:12Z"
 }

@@ -22,13 +22,13 @@ jobs:
       - name: Download and build subscriptions
         env:
           BLACK_1: "https://raw.githubusercontent.com/PizdukMod/PizdukVPN/refs/heads/main/sub"
-          BLACK_2: "https://hub.mos.ru/akelladejavu/bunker/-/raw/main/BLWL_MIX.txt"
+          BLACK_2: "https://warp-gen.cyb-portal.org/CP-034"
 
           WHITE_1: "https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/ru_configs.txt"
-          WHITE_2: "https://ghfast.top/https://raw.githubusercontent.com/ANT1VEN0M/Bunker-Auto-Engine/main/sub/bs_b64.txt"
+          WHITE_2: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
 
           EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
-          EXTRA_WHITE_2: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
+          EXTRA_WHITE_2: "https://warp-gen.cyb-portal.org/CP-035"
 
         run: |
           set -e

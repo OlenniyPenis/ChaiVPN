@@ -22,7 +22,7 @@ jobs:
       - name: Download and build subscriptions
         env:
           BLACK_1: "https://raw.githubusercontent.com/PizdukMod/PizdukVPN/refs/heads/main/sub"
-          BLACK_2: "https://ghfast.top/https://raw.githubusercontent.com/ANT1VEN0M/Bunker-Auto-Engine/main/sub/fast_b64.txt"
+          BLACK_2: "https://pozor.bond/sub/unlisted-vpn-free"
 
           WHITE_1: "https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/ru_configs.txt"
           WHITE_2: "https://ghfast.top/https://raw.githubusercontent.com/ANT1VEN0M/Bunker-Auto-Engine/main/sub/bs_b64.txt"

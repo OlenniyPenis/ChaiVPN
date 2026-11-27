@@ -24,7 +24,7 @@ jobs:
           BLACK_1: "https://raw.githubusercontent.com/PizdukMod/PizdukVPN/refs/heads/main/sub"
           BLACK_2: "https://warp-gen.cyb-portal.org/CP-034"
 
-          WHITE_1: "https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/ru_configs.txt"
+          WHITE_1: "https://raw.githubusercontent.com/ANT1VEN0M/Bunker-Auto-Engine/main/sub/bs.txt"
           WHITE_2: "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
 
           EXTRA_WHITE_1: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"

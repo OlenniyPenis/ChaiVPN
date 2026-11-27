@@ -3,22 +3,22 @@
   "maintenance": false,
   "title": "ChaiVPN by Edicoral",
   "description": "ЧАЙ СНОВА ЗАВАРЕН! Новый этап начинается!",
-  "configs": 1503,
+  "configs": 1366,
   "black": {
     "source1": {
       "online": true,
       "title": "PizdukVPN ЧС❄️",
-      "configs": 85,
+      "configs": 76,
       "updated": "06.11.2026 06:16 MSK",
-      "checked": "2026-11-27T10:04:08Z",
-      "sha256": "ec7e815625be326fc7c23444f1c7fdc274f3261398e1b37121d7b9bb3c6f6c1a"
+      "checked": "2026-11-27T19:18:36Z",
+      "sha256": "283c4cc272966d91d172a575888b6702972e7f5b0fd72d721ef5f09d2ba2ee24"
     },
     "source2": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — Black List",
       "configs": 397,
       "updated": "27.11.2026 12:25 MSK",
-      "checked": "2026-11-27T10:04:08Z",
+      "checked": "2026-11-27T19:18:36Z",
       "sha256": "65d8c7de16b5baa12ecfb8a3c60c340e4406faae4612795a8e024c7b3272a19d"
     }
   },
@@ -26,37 +26,37 @@
     "source1": {
       "online": true,
       "title": "🏳️ tg:internetbetterfree 🏳️ WHITE LISTS | CIDR | Mobile-150 (1)",
-      "configs": 114,
+      "configs": 115,
       "updated": "—",
-      "checked": "2026-11-27T10:04:10Z",
-      "sha256": "953cf8c677567be697ed61f96ea699556a091c96e4bd0cdb1bdb882c6a8376bb"
+      "checked": "2026-11-27T19:18:38Z",
+      "sha256": "ea6f0ed138a638039f7be904255683081e95c349275838c43131b6fbc1840d73"
     },
     "source2": {
       "online": true,
       "title": "Бункер БС 🤍",
-      "configs": 114,
+      "configs": 118,
       "updated": "—",
-      "checked": "2026-11-27T10:04:10Z",
-      "sha256": "953cf8c677567be697ed61f96ea699556a091c96e4bd0cdb1bdb882c6a8376bb"
+      "checked": "2026-11-27T19:18:39Z",
+      "sha256": "31bf4541fd719d36e3ef9f1e400ec95b9905a091bcaf45f2d0a37ee8d0367cd1"
     }
   },
   "extra_white": {
     "source1": {
       "online": true,
       "title": "bypass-all t.me/rjsxrd",
-      "configs": 556,
-      "updated": "12:21 27/11/2026",
-      "checked": "2026-11-27T10:04:10Z",
-      "sha256": "83b2ea0406f4ecd43b5f44e320b5af29b389f5dcd74b244402d40bfae06bea38"
+      "configs": 423,
+      "updated": "21:11 27/11/2026",
+      "checked": "2026-11-27T19:18:39Z",
+      "sha256": "ffdf5dd40b9a0416202de703b0c6d9b602642d7fdc9871f7cee70d683a7d4853"
     },
     "source2": {
       "online": true,
       "title": "🌀 CYBERPORTAL WL — White List",
       "configs": 237,
       "updated": "26.11.2026 14:59 MSK",
-      "checked": "2026-11-27T10:04:10Z",
+      "checked": "2026-11-27T19:18:39Z",
       "sha256": "b5d8698cc7cb4ef6692e7469acb030dae9a7f75fb071f9902134f6244a5e62c8"
     }
   },
-  "updated": "2026-11-27T10:04:11Z"
+  "updated": "2026-11-27T19:18:39Z"
 }
